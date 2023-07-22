@@ -1,0 +1,28 @@
+import java.util.Arraylist
+
+- khai bao:
+	ArrayList<kieu du lieu> Name_list = new ArrayList<kieu du lieu>()
+
+- hien thi cac phan tu trong mang:
+for(int i=0; i<list.size(); i++
+{
+system.out.println(list.get(i));}
+
+- list.add : them phan tu
+- cap nhat phan tu: list.set(<vi tri thu i>, <values>
+
+- list.remove("PHP");
+- list.remove(1);
+
+- tim kiem: list.contains("PHP") -> true/false;
+
+- vi tri xuat hien dau tien: list.indexOf("PHP")
+- vi tri xuat hien cuoi cung: list.lastIndexOf("PHP");
+
+constrains MSV foreign key MSV referenct SV(MSV)
+
+sau nhap so phai cos nextLine()
+
+java.io.PrintWriter;
+PrintWriter pw= new PrinWriter("đường dẫn file", "UTF-8")
+try catch

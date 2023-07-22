@@ -1,0 +1,57 @@
+- ko thay doi dc gia tri cua a
+fun main() {
+    val a: Int  = 5
+    println(a)
+     a = 8 -> loi
+    
+}
+
+- dung lateinit de co the thay doi duoc gia tri cua a sau khi gan
+fun main() {
+    lateinit var a : String 
+    a = "31"
+    println(a)
+    
+    a ="541"
+    println(a)
+    
+}
+
+ val txt: TextView = findViewById(R.id.txt)
+
+        Log.e("text", txt.text.toString() )
+
+        txt.setOnClickListener(){
+            txt.text="Trang"
+            
+
+
+            var txt: TextView = findViewById(R.id.textView2)
+            var txt2: TextView = findViewById(R.id.textView)
+            txt.setOnClickListener {
+                txt2.setText((count++).toString())
+            }
+
+
+
+        val box1 = findViewById<LinearLayout>(R.id.button)
+        val box2 = findViewById<LinearLayout>(R.id.button2)
+        val box3 = findViewById<LinearLayout>(R.id.button3)
+        val box4 = findViewById<LinearLayout>(R.id.button4)
+
+        box2.setOnClickListener(){
+            box1.background = box2.background
+
+        }
+        box3.setOnClickListener(){
+            box1.background = box3.background
+
+        }
+        box4.setOnClickListener(){
+            box1.background = box4.background
+
+        }
+
+    }
+
+        app:tint="@color/teal_200" : đổi màu icon 

@@ -1,0 +1,1210 @@
+
+
+
+
+- Log.d("Ten bien", "Gia tri bien")
+-------------------------------------------------------------
+ ************ LinearLayout *****************
+- orientation="vertical" : layout chia theo chiều ngang
+- orientation="horizontal" :layout chia theo chiều dọc
+- layout_height, layout_width: chiều cao, rộng của 1 Line; giá trị bằng match_parent: lấy hết chiều ngang màn hình, wrap_content: lấy vừa đủ nội dung trong 1 dòng
+- weightSum="10": chia viewGroup thành 10 phần chứa các view nhỏ, mỗi view nhỏ chiếm 1 phần sao cho tổng số phần đó của các view nhỏ bằng số phần của viewGroup thì chứa đầy màn hình
+- text="Chữ muốn hiện"
+- textSize: cỡ chữ, thường tính theo đơn vị sp
+- textColor: màu
+- background: màu nền
+
+ ************ RelativeLayout ****************
+- visibity="visible" hoặc bằng "invisible", mặc định là false : hiện ra, giống display: flex - hiện , display: none - ẩn CSS
+- layout_alignParentEnd = "true" : căn phải
+- layout_alignParentStart = "true" : căn trái
+- layout_alignParentButtom = "true" : căn dưới
+- layout_alignParentTop = "true" : căn trên
+
+- layout_centerInParent="true" : căn giữa cái đag xét
+- layout_centerVerital = "true": cách đều trên dưới
+- layout_centerHorizontal = "true" : cách đều trái phải
+
+-có thể đặt id cho từng thẻ riêng biệt
+
+- layout_below= "địa chỉ ID của 1 thẻ nào đó" : cái đang tạo ra sẽ nằm dưới cái có địa chỉ ID kia
+- layout_above=" địa chỉ ID của 1 thẻ nào đó: : cái đang tạo ra sẽ nằm trên cái có địa chỉ ID kia
+- layout_toStartOf="Địa chỉ ID của 1 thẻ nào đó" : cái tạo ra sẽ nằm bên trái cái có địa chỉ ID kia
+- layout_toEndOf=" địa chỉ ID của 1 thẻ nào đó" : cái tạo ra sẽ nằm bên phải cái có địa chỉ ID kia
+
+********************* FrameLayout ****************************
+- measureAllChildren="true": các view thiết kế sau sẽ được hiện lên trước, tránh tình trạng bị ẩn sau hình
+- thẻ ImageView: thẻ ảnh
+- src="đường dẫn" : gắn thẻ
+
+********************** TableLayout ********************
+- TableRow: chia dòng
+- layout_span= " a cột"; gộp a cột trên 1 dòng, nếu 1 dòng có nhiều hơn a cột thì khi thêm cột nữa vẫn đảm bảo a cột ít hơn số cột hiện tại thì vẫn span hết dòng đó
+- Nếu muốn các cột cách đều nhau và cách đều 2 bên thì ở thẻ TableLayout dùng thuộc tính: stretchColumns="*"
+
+******************* CONSTRAINT LAYOUT ****************
+????
+
+
+-----------------------------------------------------------------------
+			BUTTON
+- Button thường chỉ sử dụng sự kiện OnClickListen là chủ yếu
+
+package com.nht.quytrinhthietke;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView txtNoiDung;// bien toan cuc
+    Button btn;// biến toàn cục
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // anh xa
+        txtNoiDung=(TextView) findViewById(R.id.TextNoiDung);
+        btn=(Button) findViewById(R.id.btn1);
+
+        // viet code
+        txtNoiDung.setText("Lap trinh ANDROID");
+        txtNoiDung.setTextSize(25);
+
+        btn.setText("Click me!");
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View view) {
+                txtNoiDung.setText("Success");
+                btn.setText("OKE");
+            }
+        });
+
+    }
+}
+
+----------------------------------------------------------------------
+- Cách đặt tên hình btrong android ( tương tự như cách đặt tên file)
+1. ko viết IN/HOA
+2. ko có khoảng trắng
+3. ko có kí tự đặc biệt: trừ _
+4. ko bắt đầu là con số...
+---------------------------------------------------------------------------
+
+
+package com.nht.edittext;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    // khai báo biến
+    EditText txtNoiDung;
+    Button BTN;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // ánh xạ
+        txtNoiDung = (EditText) findViewById(R.id.TextName);
+        BTN= (Button) findViewById(R.id.btn);
+
+        // viết code
+        BTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String noidungnhap = txtNoiDung.getText().toString();
+                Toast.makeText(MainActivity.this, noidungnhap, Toast.LENGTH_LONG).show(); // xuất ra thông báo nội dung đã nhập
+            }
+        });
+    }
+}
+
+
+---------------------------------------------------------------
+			IMAGEVIEW
+- scaleType="centerCrop, fixXY"   :cắt từ giữa phóng ra
+- srcCompat="@thư mục lưu ảnh/ đường dẫn/ tên ảnh" : trường hợp kéo thả 
+- src: trường hợp dán đường dẫn vào luôn
+
+*** java ***
+package com.nht.ganhinhnen;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
+public class MainActivity extends AppCompatActivity {
+    ImageView hinh;
+    RelativeLayout manHinh;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        // anh xa
+        hinh =(ImageView) findViewById(R.id.hinh);
+        manHinh =(RelativeLayout) findViewById(R.id.manHinh);
+
+        hinh.setImageResource(R.drawable.anh1); // set background
+        manHinh.setBackgroundColor(Color.rgb(123,33,200)); // Chuyển màu dần dần của hình nền
+        manHinh.setBackgroundResource(R.drawable.anh1);
+    }
+}
+
+*** xlm ***
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/androidmobile"
+    android:id="@+id/manHinh">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/anh1"
+        android:id="@+id/hinh"
+        />
+
+</RelativeLayout>
+--------------------------------------------------------
+		IMAGEBUTTON
+///// tách phông với hình: 
+	android:background="@null"
+-----------------------------------------------------------
+			SWITCH
+* Tạo ứng dụng gán hình nền random: tạo 1 mảng lưu danh sách các hình nền. Tạo 1 biến vị trí lưu vị trí random đc trong danh sách. Set lại background là hình nền thứ i .get(i)
+--------------------------------------------------------------				CHECKBOX
+- Tạo nút ChechBox mở wifi và thông báo ra màn hình "Đã bật" hoặc "Đã tắt"
+---------------------------------------------------------
+			RADIO BUTTON
+ * xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <RadioButton
+            android:id="@+id/sang"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sáng"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/trua"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Trưa" />
+
+        <RadioButton
+            android:id="@+id/chieu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Chiều" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Xác nhận"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+* Main.Java
+package com.nht.radiobutton;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    // khai báo
+    RadioButton rbSang, rbTrua, rbChieu;
+    Button xacnhan;
+    RadioGroup rdb;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        // anh xa
+        rbSang= (RadioButton) findViewById(R.id.sang);
+        rbTrua= (RadioButton) findViewById(R.id.trua);
+        rbChieu= (RadioButton) findViewById(R.id.chieu);
+        rdb= (RadioGroup) findViewById(R.id.radiogroup);
+        xacnhan= (Button) findViewById(R.id.button);
+        // code xử lí theo switch- case của radioGroup
+        rdb.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                // i trả về địa chỉ của radioButton
+                switch(i)
+                {
+                    case R.id.sang: {
+                        Toast.makeText(MainActivity.this, "Sáng", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case R.id.trua:{
+                        Toast.makeText(MainActivity.this, "Trưa", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case R.id.chieu:
+                    {
+                        Toast.makeText(MainActivity.this, "Chiều", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                }
+            }
+        });
+
+        // code xử lý khi bấm nút button xác nhận
+
+        xacnhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // code xử lý theo lệnh riêng
+                if(rbSang.isChecked()== true)
+                {
+                    Toast.makeText(MainActivity.this, "Sáng", Toast.LENGTH_SHORT).show();
+                }
+                if(rbTrua.isChecked()== true)
+                {
+                    Toast.makeText(MainActivity.this, "Trưa", Toast.LENGTH_SHORT).show();
+                }
+                if(rbChieu.isChecked()== true)
+                {
+                    Toast.makeText(MainActivity.this, "Chiều", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+    }
+}
+
+----------------------------------------------------
+	ProgressBar - biểu thị tiến trình hoạt động
+
+	https://openplanning.net/12745/android-progressbar
+
+- ProgressBar có 1 vài kiểu dáng khác nhau, được quyết định bởi style. Về cơ bản có 2 dạng chính:
++ Spinning Wheel ProgressBar (ProgressBer bánh xe hình tròn)
++ Horizontal ProgressBar (ProgressBar nằm ngang)
+
+- Ngoài ra ProgressBar hỗ trợ 2 chế độ (mode) của tiến trình đó là Determinate (Xác đinh) và Indeterminate ( Ko xác định)
+
++ Determinate mode (Chế độ xác định): bạn nên sử dụng chế độ nàu cho ProgressBar nếu xác định được phần trăm công việc đã thực hiện. Chẳng hạn tỷ lệ phần trăm tệp đã tải xuống, số lượng bản ghi được chèn vào cơ sở dữ liệu, ...
+
+* Lưu ý: chế độ mặc định của 1 ProgressBar nằm ngang là Determinate(Xác định)
+
+- Các thuộc tính thường sử dụng của ProgressBar
++ min: mặc định là 0
++ max: giá trị lớn nhất của ProgressBar. Mặc định là 100
++ progress: giá trị hiện thời của ProgressBar. Mặc định là 0
+
++ Indeterminate (Chế độ không xác định): Bạn nên sử dụng chế độ này cho ProgressBar nếu bạn không xác đinh được phần trăm công việc đã hoàn thành.
+
+<ProgressBar
+        android:id="@+id/progressBar_xuly"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:max="150" 		<!-- độ dài mã của thanh load-->
+        android:progress="20" 		<!-- hiện đang có 20 -->
+        android:secondaryProgress="70" 	<!-- chạy trước 70 -->
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+------------------------------------------------------------------
+			CounDownTimer 
+
+https://edu.com.vn/lap-trinh-di-dong/lap-trinh-android/countdowntimer-trong-android.html
+
+----------------------------------------------------------------
+			SeekBar
+https://openplanning.net/10507/android-seekbar
+
+- icon tròn trên thanh seekbar có thể thay đổi bằng icon hay ảnh khác
+- seekber có 3 sự kiện, nhưng hay dùng nhất là sự kiện đầu tiên : thay đổi giá trị
+- progressDrawable= "@android:color/transperent": màu trong suốt
+
+----------------------------------------------------------------------
+****************************************************************
+			LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG
+
+- khai báo class và các phương thức ở file sinhvien.java
+- sử dụng class ở bên file MainActivity.java
+
+1. Tạo class sinhvien
+2. Phương thức getter- setter
+3. Constructor : khai báo lớp sinhvien(); - lớp sinh viên ko có đối số truyền vào
+		 khai báo lớp sinhvien(String hoten, String diachi, int tuoi, ...); lớp sinh vien có đối số truyền vào
+
+-------------------------------------------------------------------------
+			LISTVIEW - cơ bản
+https://openplanning.net/10435/android-listview
+
+- Gồm 4 bước:
+	B1: kéo ListView vào phần design 
+	B2: Tạo ArrayList<String> lưu danh sách các item
+	B3: Tạo ArrayAdapter 
+	B4: Chọn màn xuất ListView
+
+- Sự kiện Click
+- ViewHolder ... xem code
+
+* ListView: Là dạng layout chia theo dòng như kiểu List
+* Gridview: Là dạng layout chia theo cả dòng và cột (kiểu ô)
+
+----------------------------------------------------
+			Gridview cơ bản
+
+- Design layout: numColumns="số, mặc định là 1 cột": so cot tren 1 dong 
+
+package com.nht.gridview;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    GridView gvTen;
+    String[] arr = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "O", "U", "P", "Q", "T", "V", "S", "X", "Y"};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        gvTen  = (GridView) findViewById(R.id.gridviewTen);
+        ArrayAdapter adapter = new ArrayAdapter(MainActivity.this, android.R.layout.simple_list_item_1, arr);
+        gvTen.setAdapter(adapter);
+
+        gvTen.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(MainActivity.this, ""+i, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+}
+
+-->   	0	1	2	3	4
+	A	B	C	D	E
+	
+	5	6	7	8	9 ...
+	F	G	H	I	K ...
+
+--------------------------------------------------------------------------------------
+			GridView _ App Gallery
+- verticalSpacing: khoảng cách giữa các ô về chiều ngang
+- horizontalSpacing: khoảng cách giữa các ô về chiều dọc
+--------------------------------------------------------------------------
+
+			Drawable Shape Custom Button
+
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">			// tạo hình button là hình chữ nhật
+    <solid  android:color="@color/teal_200"/>   // tạo màu nền hình
+
+    <size android:height="200dp"		// tạo kích thước các chiều
+        android:width="200dp"/>
+
+    <corners android:radius="100dp"/>		// bo góc
+
+    <stroke android:width="20dp"		// độ dày viền
+            android:color="#ff0"		// màu viền
+            android:dashGap="3dp"		// khoảng cách giũa các ke của viền nét đứt
+            android:dashWidth="30dp"/>		// độ dài của khoảng viền
+
+    <padding android:bottom="20dp"/>		// content cách viền dưới/ trên/ trái/ phải
+
+						// hiệu ứng chuyển màu
+    <gradient android:angle="45"		// góc chia hết cho 45
+            android:startColor="#FF0008"	// màu bắt đầu từ phía dưới
+        android:centerColor="#00FF37"		// màu ở giữa
+            android:endColor="#001AFF"		// màu bắt đầu từ trên
+        />
+</shape>
+
+
+				Drawable Shape Custom EditText
+
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <size
+        android:width="200dp"
+        android:height="150dp"/>
+    <stroke
+        android:color="#DDDD4A"
+        android:width="2dp"
+        />
+    <corners
+        android:radius="30dp"/>
+
+<!--    tạo editText trong suốt ko có màu nền chỉ có đường viền-->
+
+
+</shape>
+-----------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------
+MENU: tạo thư mục menu -> tạo file menu -> xmln: trong thẻ menu tạo các item riêng hoặc tạo menu đa cấp item -> menu -> các item
+------------------------------------------------------------------------
+		SỰ KIỆN CLICK item
+* Note: Trong <item android: title="chbđyycucoc" phải có tiêu đề />
+
+package com.nht.menu;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_demo, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId())
+        {
+            case R.id.menuSetting:
+                Toast.makeText(MainActivity.this, "Bạn cho setting", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menuEdit:
+                Toast.makeText(MainActivity.this, "Bạn cho Edit", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menuSearch:
+                Toast.makeText(MainActivity.this, "Bạn cho Search", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menuShare:
+                Toast.makeText(MainActivity.this, "Bạn cho share", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}
+
+--------------------------------------------------------------------------
+
+Popup Menu: 1 cai button nhấn giữ click mới sổ ra menu
+****
+menu.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/them"
+        android:title="Thêm"/>
+
+    <item android:id="@+id/sua"
+        android:title="Sửa"/>
+
+    <item android:id="@+id/xoa"
+        android:title="Xóa"/>
+
+</menu>
+****
+main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popup Menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+**** Main.java
+package com.nht.popupmenu;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.PopupMenu;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btn;
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn = (Button) findViewById(R.id.button_menu);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShowMenu();
+            }
+        });
+    }
+
+    private void ShowMenu()
+    {
+        PopupMenu popupMenu = new PopupMenu(this, btn);
+        popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                switch(menuItem.getItemId())
+                {
+                    case R.id.them:
+                        btn.setText("Thêm");
+                        break;
+                    case R.id.sua:
+                        btn.setText("Sửa");
+                        break;
+                    case R.id.xoa:
+                        btn.setText("Xóa");
+                        break;
+                }
+                return false;
+            }
+        });
+        popupMenu.show();
+    }
+}
+
+
+--------------------------------------------------------------
+*******       Alert Dialog        ************
+- Hộp thoại thông báo người dùng khi long on Click vào 1 view trong listView rằng có muốn xóa view đó hay không?
+package com.nht.alertdialog;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    ListView lv;
+    ArrayList<String> arr;
+    ArrayAdapter adapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // ánh xạ
+
+        lv = (ListView) findViewById(R.id.litsview);
+        arr = new ArrayList<>();
+        AddArrayName();
+        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arr);
+        lv.setAdapter(adapter);
+
+        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                XacNhanXoa(i);
+                return false;
+            }
+        });
+    }
+
+    private void XacNhanXoa(int position)
+    {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setTitle("Thông báo");
+        alertDialog.setIcon(R.mipmap.ic_launcher);
+        alertDialog.setMessage("Bạn có muốn xóa môn học này không?");
+
+        alertDialog.setPositiveButton("Có", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // xóa phần tử thứ i đang on click
+                arr.remove(position );
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        alertDialog.setNegativeButton("Không", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // không làm gì
+            }
+        });
+        alertDialog.show();
+    }
+    private void AddArrayName()
+    {
+        arr.add("Android");
+        arr.add("iOS");
+        arr.add("PHP");
+        arr.add("C++");
+        arr.add("Python");
+    }
+}
+
+-----------------------------------------------------------------------------------------
+			Dialog Custom - hiện lên hộp thoại vd như đăng nhập
+-----------------------------------------------------------------------------------------
+
+				Calendar - Funtion thời gian
+
+
+	Calendar calendar = new Calendar.getInstance();
+	txtTime.append( calendar.getTime()+ "\n")
+	
+Calendar.DATE
+Calendar.MONTH
+Calendar.YEAR
+Calendar.HOUR
+Csalendar.HOUR_OF_DAY
+
+	SimpleDateFormat dinhDangNgay = new SimlpeDateFormat("dd/MM/yyyy")
+HH:mm:ss
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+		CHƯƠNG 9: TẠO ỨNG DỤNG ĐA MÀN HÌNH
+
+
+	A. Intent Explicit 
+
+btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivities(new Intent[] {intent});
+
+            }
+
+        });
+
+
+
+	B. Activity Lifecycle - Hàm
+
+- Các trạng thái chính trong vòng đời Activity
+	
+	+ onCreate()
+	+ onStart()
+	+ onResume()
+	+ onPause()
+	+ onStop()
+	+ onDestroy()
+	+ onRestart()
+
+		****** Intent Explicit ******
+	
+	C. Intent Explicit Truyền và nhận chuỗi
+
+*MainAvtivity 1
+
+package com.nht.intentexplicittruynvnhnchui;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btn;
+
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn = (Button) findViewById(R.id.button);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("dulieu", "Nội dung dữ liệu");
+
+                startActivities(new Intent[]{intent});
+            }
+        });
+    }
+}
+
+
+* MainActivity 2
+
+package com.nht.intentexplicittruynvnhnchui;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MainActivity2 extends AppCompatActivity {
+
+    TextView tv ;
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+
+        tv = (TextView) findViewById(R.id.textView);
+
+        // nhận dữ liệu từ intent
+
+        Intent intent = getIntent();
+
+
+        String noidung = intent.getStringExtra("dulieu");
+
+        tv.setText(noidung);
+
+    }
+}
+	
+	D. Intent Explicit Truyền và nhận số
+
+*MainAvtivity 1
+
+package com.nht.intentexplicittruynvnhnchui;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btn;
+
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn = (Button) findViewById(R.id.button);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("dulieu", "2023");
+
+                startActivities(new Intent[]{intent});
+            }
+        });
+    }
+}
+
+
+* MainActivity 2
+
+package com.nht.intentexplicittruynvnhnchui;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MainActivity2 extends AppCompatActivity {
+
+    TextView tv ;
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+
+        tv = (TextView) findViewById(R.id.textView);
+
+        // nhận dữ liệu từ intent
+
+        Intent intent = getIntent();
+
+
+        String noidung = intent.getIntExtra("dulieu", 1234);  -> KQ: 2023
+	String noidung = intent.getIntExtra("DuLieu", 1234);   -> KQ: 1234
+	String noidung = intent.getStringExtra("dulieu", 1234);   -> KQ: 1234
+
+	// dulieu: là tên biến
+	// 1234: là 1 cái giá trị bất kì mình đặt là giá trị mặc định
+	// Kết luận: 
+
+	TH1: nếu sai tên biến dù là viết hoa hay thường thì kq trả ra là giá trị mặc định 
+	
+	TH2: nếu sai kiểu dữ liệu cũng trả về giá trị mặc định : getIntExtra/  getStringExtra ...
+
+
+        tv.setText(""+ noidung);
+
+    }
+}
+
+
+		E. Intent Explicit Truyền và nhận mảng
+
+*MainAvtivity 1
+
+package com.nht.intentexplicittruynvnhnchui;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btn;
+
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn = (Button) findViewById(R.id.button);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+		String arr = { "Andoird", "PHP", "PYTHON", "PASCAL"};
+                intent.putExtra("dulieu", arr);
+
+                startActivities(new Intent[]{intent});
+            }
+        });
+    }
+}
+
+
+* MainActivity 2
+package com.nht.intentexplicittruynvnhnchui;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MainActivity2 extends AppCompatActivity {
+
+    TextView tv ;
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+
+        tv = (TextView) findViewById(R.id.textView);
+
+        // nhận dữ liệu từ intent
+
+        Intent intent = getIntent();
+
+        String[] mangMonHoc = intent.getStringArrayExtra("dulieu");
+
+        for(int i=0; i<mangMonHoc.length; i++)
+        {
+            tv.append(mangMonHoc[i]+"\n");
+        }
+
+    }
+}
+
+
+		F. Truyền và nhận đối tượng
+Chú ý: Serializable 
+
+		
+		G. Truyền và nhận Bundle (Thùng dữ liệu chứ nhiều gói nhỏ DATA)
+
+
+
+
+		***** Intent Implicit *****
+
+	GIỚI THIỆU: Một Intent (ý định) cho phép bạn có thể chạy một Activity ở ứng dụng khác bằng cách mô tả tác vụ mà bạn muốn thực hiện (Ví dụ như "xem bản đồ" hay "chụp một bức ảnh") trong đối tượng Intent. Loại Intent này được gọi là Implicit Intent (ý định không rõ ràng) vì nó không mô tả cụ thể ứng dụng nào để thực thi, nhưng thay vào đó thì nó mô tả hành động và cung cấp một số dữ liệu để có thể thực hiện được hành động đó.
+
+		A. ACTION_VIEW
+		B. ACTION_SENDTO
+		C. ACTION_CALL //  <uses-permission android:name="android.permission.CALL_PHONE"/>  -> cấp quyền truy cập cuộc gọi
+
+package com.nht.action_sendto_mess_call;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+public class MainActivity extends AppCompatActivity {
+
+    ImageView imgBrowers, imgMess, imgCall;
+
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        imgBrowers  = (ImageView) findViewById(R.id.imageView);
+        imgMess     = (ImageView) findViewById(R.id.imageView2);
+        imgCall     = (ImageView) findViewById(R.id.imageView3);
+
+
+        imgBrowers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+
+                intent.setAction(Intent.ACTION_VIEW);
+
+                intent.setData(Uri.parse("https://www.youtube.com/watch?v=HYouydT7mhA&list=PL5uqQAwS_KDjAgLGiaCakwJV1f4vRnTLS&index=84"));
+
+                startActivity(intent);
+            }
+        });
+
+        imgMess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+
+                intent.setAction(Intent.ACTION_SENDTO);
+
+                intent.putExtra("sms_body", "Xin chào, tôi có thể giúp gì cho bạn không?");
+
+                intent.setData(Uri.parse("sms:0947325689"));
+
+                startActivity(intent);
+            }
+        });
+
+        imgCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+
+                intent.setAction(Intent.ACTION_CALL);
+
+                intent.setData(Uri.parse("tel:0329677203"));
+
+                startActivity(intent);
+            }
+        });
+    }
+}
+
+
+
+----------------------------------------------------------------------------
+
+				INTENT CAMERA
+
+package com.nht.intentcamera;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btn;
+    ImageView img;
+
+    int REQUES_CAMERA = 123; // 1 con số bạn tự đặt
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btn = (Button) findViewById(R.id.button);
+        img = (ImageView) findViewById(R.id.imageView);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); // chụp ảnh
+
+                startActivityForResult(intent, REQUES_CAMERA);
+                //
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(requestCode== REQUES_CAMERA && requestCode== RESULT_OK && data!=null)
+        {
+            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+            img.setImageBitmap(bitmap);
+        }
+
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+}
+
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,929 @@
+{
+  "Hot_Update": [
+    {
+      "Name": "Martial Peak Chapter 3219",
+      "Link_Manga": "https://www.ninemanga.com/manga/MARTIAL+PEAK.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201805/201805272240119822.jpg",
+      "Month_Update": "(04-10)"
+    },
+    {
+      "Name": "Tales of Demons and Gods 425",
+      "Link_Manga": "https://www.ninemanga.com/manga/Tales+of+Demons+and+Gods.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201508/201508111350111481.jpg",
+      "Month_Update": "(04-10)"
+    },
+    {
+      "Name": "Battle Through The Heavens Chapter 400",
+      "Link_Manga": "https://www.ninemanga.com/manga/Dou+Po+Cang+Qiong.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201507/201507061917045446.jpg",
+      "Month_Update": "(04-09)"
+    },
+    {
+      "Name": "The Great Ruler Chapter 403",
+      "Link_Manga": "https://www.ninemanga.com/manga/THE+GREAT+RULER.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201603/201603151225143434.jpg",
+      "Month_Update": "(04-09)"
+    },
+    {
+      "Name": "Tate no Yuusha no Nariagari 96",
+      "Link_Manga": "https://www.ninemanga.com/manga/TATE+NO+YUUSHA+NO+NARIAGARI.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201503/201503220912101380.jpg",
+      "Month_Update": "(04-08)"
+    },
+    {
+      "Name": "Wu Dong Qian Kun Chapter 178",
+      "Link_Manga": "https://www.ninemanga.com/manga/WU+DONG+QIAN+KUN.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201508/201508042216309461.jpg",
+      "Month_Update": "(04-08)"
+    },
+    {
+      "Name": "Tomb Raider King 404",
+      "Link_Manga": "https://www.ninemanga.com/manga/Tomb+Raider+King.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201907/201907040751532894.jpg",
+      "Month_Update": "(04-08)"
+    },
+    {
+      "Name": "Versatile Mage Chapter 1017",
+      "Link_Manga": "https://www.ninemanga.com/manga/Versatile+Mage.html",
+      "Image": "https://ta1.yx247.com/files/img/logo/201806/201806260811425791.jpg",
+      "Month_Update": "(04-08)"
+    }
+  ],
+  "Latest_Update": [
+    {
+      "Name": "Shinsengumi Chuubou Roku\n",
+      "Chapter_Update": "\nShinsengumi Chuubou Roku 7\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Watashi wo Koroshita Wankokei Kishi-sama ga, Yandere ni Job Change shite Kyou mo Inochi wo Nerattekuru\n",
+      "Chapter_Update": "\nWatashi wo Koroshita Wankokei Kishi-sama ga, Yandere ni Job Change shite Kyou mo Inochi wo Nerattekuru 5.1\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Fist of the Seeker\n",
+      "Chapter_Update": "\nFist of the Seeker 42\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Hino-san no Baka\n",
+      "Chapter_Update": "\nHino-san no Baka 121\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Rinjin-chan ga shinpai\n",
+      "Chapter_Update": "\nRinjin-chan ga Shinpai 113\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Death Game Begins\n",
+      "Chapter_Update": "\nDeath Game Begins 2\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Daily life of Kitsune-san\n",
+      "Chapter_Update": "\nDaily Life of Kitsune-san 21\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Machikado Mazoku Matome (4-Koma) (Soregashi 16bit)\n",
+      "Chapter_Update": "\nMachikado Mazoku Matome (4-Koma) (Soregashi 16bit) 14\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Kitazawa-kun wa A Class\n",
+      "Chapter_Update": "\nKitazawa-kun wa A Class 4\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "The Holy Grail of Eris\n",
+      "Chapter_Update": "\nThe Holy Grail of Eris 38\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "MARTIAL PEAK\n",
+      "Chapter_Update": "\nMartial Peak Chapter 3219\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Girl and Science\n",
+      "Chapter_Update": "\nGirl and Science Chapter 347\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "The Reincarnated Villainess' Dark History\n",
+      "Chapter_Update": "\nThe Reincarnated Villainess' Dark History Chapter 26\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "King Of Manifestations\n",
+      "Chapter_Update": "\nKing of Manifestations Chapter 218\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Master of Master\n",
+      "Chapter_Update": "\nMaster of Master Ch.053\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "DOULUO DALU II - JUESHI TANGMEN\n",
+      "Chapter_Update": "\nDouluo Dalu II - Jueshi Tangmen 449\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Phase\n",
+      "Chapter_Update": "\nPhase Chapter 101\n",
+      "Time_Update": "1 minutes ago"
+    },
+    {
+      "Name": "Am I Invincible\n",
+      "Chapter_Update": "\nAm I Invincible Chapter 152\n",
+      "Time_Update": "17 minutes ago"
+    },
+    {
+      "Name": "How To Train A Good-For-Nothing Rich Boy\n",
+      "Chapter_Update": "\nHow To Train A Good-For-Nothing Rich Boy Chapter 53\n",
+      "Time_Update": "17 minutes ago"
+    },
+    {
+      "Name": "For No Reason\n",
+      "Chapter_Update": "\nFor No Reason Chapter 11\n",
+      "Time_Update": "19 minutes ago"
+    },
+    {
+      "Name": "Lady Crystal is a Man\n",
+      "Chapter_Update": "\nLady Crystal Is A Man Chapter 17\n",
+      "Time_Update": "19 minutes ago"
+    },
+    {
+      "Name": "Holiday Yasumi's Twitter Shorts\n",
+      "Chapter_Update": "\nHoliday Yasumi's Twitter Shorts 35\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Life In Tokyo Ichijou\n",
+      "Chapter_Update": "\nLife In Tokyo Ichijou 8\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "There Is No Perfect Married Couple\n",
+      "Chapter_Update": "\nThere Is No Perfect Married Couple Chapter 11\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Road to Awakening\n",
+      "Chapter_Update": "\nHeaven Awakening Path Ch.068\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "His highness's allure\n",
+      "Chapter_Update": "\nHis Highness's Allure His Highness's Allure Ch.043\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Da Lao Shiyi Hou Zhi Jide Wo\n",
+      "Chapter_Update": "\nDa Lao Shiyi Hou Zhi Jide Wo Ch.162\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Starting With Seven Stunning Senior Sisters\n",
+      "Chapter_Update": "\nStarting With Seven Stunning Senior Sisters Chapter 33\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Leveling My Husband To The Max\n",
+      "Chapter_Update": "\nLeveling My Husband To The Max Chapter 82\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Become a Witch in a World Full of Ghost Stories\n",
+      "Chapter_Update": "\nBecome A Witch In A World Full Of Ghost Stories Chapter 3\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "My Butler, Not Lover\n",
+      "Chapter_Update": "\nMy Butler, Not Lover Chapter 102\n",
+      "Time_Update": "2 hours ago"
+    },
+    {
+      "Name": "Jinhua Kuangchao\n",
+      "Chapter_Update": "\nJinhua Kuangchao 117\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Reborn Tyrannical Slag: Pampering the Iceberg President\n",
+      "Chapter_Update": "\nReborn Tyrannical Slag: Pampering the Iceberg President 65\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "This Star\n",
+      "Chapter_Update": "\nThis Star 39\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "You're My Unknown Variable\n",
+      "Chapter_Update": "\nYou're My Unknown Variable 1\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Hachioji Meibutsu Tengu no Koi\n",
+      "Chapter_Update": "\nHachioji Meibutsu Tengu no Koi 1\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Heavenly Jewel Change\n",
+      "Chapter_Update": "\nHeavenly Jewel Change Chapter 84\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Youngest Son Of The Namgung Clan\n",
+      "Chapter_Update": "\nYoungest Son of the NamGung Clan Chapter 29\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Carsearin\n",
+      "Chapter_Update": "\nCarsearin Ch.042\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Chongsheng Zhi Wei Zhui Yingdi\n",
+      "Chapter_Update": "\nChongsheng Zhi Wei Zhui Yingdi Ch.044\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Return of the Legend (Song Jin-woo)\n",
+      "Chapter_Update": "\nReturn of the Legend (Song Jin-woo) Ch.088\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "I Was Caught up in a Hero Summoning, but That World Is at Peace\n",
+      "Chapter_Update": "\nI Was Caught Up In A Hero Summoning, But That World Is At Peace Chapter 43\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Devil Wants To Hug\n",
+      "Chapter_Update": "\nDevil Wants To Hug Chapter 197\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Senpai is Mine\n",
+      "Chapter_Update": "\nSenpai Is Mine Chapter 216\n",
+      "Time_Update": "3 hours ago"
+    },
+    {
+      "Name": "Ganbare, Douki-chan (Webcomic)\n",
+      "Chapter_Update": "\nGanbare, Douki-chan (Webcomic) 217\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Hongyue Start\n",
+      "Chapter_Update": "\nHongyue Start 67\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Picked up From Another World\n",
+      "Chapter_Update": "\nPicked up From Another World 106\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "How to Get Rid of My Dark Past\n",
+      "Chapter_Update": "\nHow to Get Rid of My Dark Past Ch.058\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "EMMA TO HAKUSHAKU\n",
+      "Chapter_Update": "\nEmma to Hakushaku 31\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Martial God Asura\n",
+      "Chapter_Update": "\nMartial God Asura Chapter 759\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Pixiu's Eatery, No Way Out\n",
+      "Chapter_Update": "\nPixiu's Eatery, No Way Out Chapter 107\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "The Legendary Return\n",
+      "Chapter_Update": "\nThe Legendary Return Chapter 89\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Akuyaku Reijou wa Ouji no Honsou (Dekiai) wo Shiranai\n",
+      "Chapter_Update": "\nAkuyaku Reijou Wa Ouji No Honsou (Dekiai) Wo Shiranai Chapter 4\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Answer Me, My Prince\n",
+      "Chapter_Update": "\nAnswer Me, My Prince Chapter 45\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "The puzzle of the sacrificial second princess – The hostage princess receives a warm welcome as a talented person in the enemy country~\n",
+      "Chapter_Update": "\nThe Puzzle Of The Sacrificial Second Princess – The Hostage Princess Receives A Warm Welcome As A Talented Person In The Enemy Country~ Vol.2 Chapter 8\n",
+      "Time_Update": "4 hours ago"
+    },
+    {
+      "Name": "Fisher man\n",
+      "Chapter_Update": "\nFisher Man Ch.006\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Worn and Torn Newbie\n",
+      "Chapter_Update": "\nWorn and Torn Newbie Ch.138\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "A Queen's Law of Survival\n",
+      "Chapter_Update": "\nA Queen's Law of Survival A Queen's Law of Survival Ch.120\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "How to fight\n",
+      "Chapter_Update": "\nHow to Fight Chapter 177\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "The Boutique At 97Th Sheldon Street\n",
+      "Chapter_Update": "\nThe Boutique at 97th Sheldon Street Chapter 69\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "The Lone SSS-Class Summoner\n",
+      "Chapter_Update": "\nThe Lone Sss-Class Summoner Chapter 42\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Martial Star Ocean\n",
+      "Chapter_Update": "\nMartial Star Ocean Chapter 48\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Silver Spoon (OZAWA Mari)\n",
+      "Chapter_Update": "\nSilver Spoon (Ozawa Mari) Chapter 42.2\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Nakamura-san, the Uninvited Gyaru\n",
+      "Chapter_Update": "\nNakamura-san, the Uninvited Gyaru 2\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Aekanaru\n",
+      "Chapter_Update": "\nAekanaru 30\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Ikenie Daini Koujo no Konwaku\n",
+      "Chapter_Update": "\nIkenie Daini Koujo no Konwaku 8\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Korogaru Kyoudai\n",
+      "Chapter_Update": "\nKorogaru Kyoudai 19\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Kobayashi-san Chi no Maid Dragon Full Color Comic\n",
+      "Chapter_Update": "\nKobayashi-san Chi no Maid Dragon Full Color Comic 4\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "The Strongest God King\n",
+      "Chapter_Update": "\nThe Strongest God King Chapter 329\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "\"I… Don't Want to Work Anymore\" I Quit Being an Adventurer. Even if You Treat Me Better Now, I Won't Do It. I Will NEVER Work Again.\n",
+      "Chapter_Update": "\n\"I… Don't Want to Work Anymore\" I Quit Being an Adventurer. Even if You Treat Me Better Now, I Won't Do It. I Will NEVER Work Again. Chapter 11.2\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "The Ex (SASA)\n",
+      "Chapter_Update": "\nThe Ex (SASA) Ch.160\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Secret Class\n",
+      "Chapter_Update": "\nSecret Class 168\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "Apollo’s Heart\n",
+      "Chapter_Update": "\nApollo’s Heart Chapter 34\n",
+      "Time_Update": "5 hours ago"
+    },
+    {
+      "Name": "\"Mou.... Hatarakitakunaindesu\" Boukensha Nanka Yamete yaru. Imasara, Taiguu wo Kaerukara to Onegai sarete mo Okotowaridesu. Boku wa Zettai Hatarakimasen\n",
+      "Chapter_Update": "\n\"Mou.... Hatarakitakunaindesu\" Boukensha Nanka Yamete yaru. Imasara, Taiguu wo Kaerukara to Onegai sarete mo Okotowaridesu. Boku wa Zettai Hatarakimasen 11.2\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Erotical Wizard With Twelve Brides\n",
+      "Chapter_Update": "\nErotical Wizard With Twelve Brides 1\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Satellite Coin Laundry\n",
+      "Chapter_Update": "\nSatellite Coin Laundry 11\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Silver Spoon\n",
+      "Chapter_Update": "\nSilver Spoon 42.2\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "I’M A Tycoon In The Other World\n",
+      "Chapter_Update": "\nI’m A Tycoon In The Other World Chapter 119\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Keep A Low Profile, Sect Leader\n",
+      "Chapter_Update": "\nKeep A Low Profile, Sect Leader Chapter 195\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Fray\n",
+      "Chapter_Update": "\nFray Chapter 48\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Flawed Almighty\n",
+      "Chapter_Update": "\nFlawed Almighty Ch.077\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "My Cultivator Girlfriend\n",
+      "Chapter_Update": "\nMy Cultivator Girlfriend Ch.777\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Hatshepsut\n",
+      "Chapter_Update": "\nHatshepsut Vol.01 Ch.176\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "My Wife is a Demon Queen\n",
+      "Chapter_Update": "\nMy Wife is a Demon Queen Ch.444\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "The Reader and Protagonist Definitely Have to Be in True Love (Novel)\n",
+      "Chapter_Update": "\nThe Reader and Protagonist Definitely Have to Be in True Love (Novel) Ch.028\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Tales of Demons and Gods\n",
+      "Chapter_Update": "\nTales of Demons and Gods 425\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Circumstances of Switching Bodies\n",
+      "Chapter_Update": "\nCircumstances of Switching Bodies Chapter 78\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "The Secret Of The Friendly Duke\n",
+      "Chapter_Update": "\nThe Secret of the Friendly Duke Chapter 51\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "The True Wife’s Scenario\n",
+      "Chapter_Update": "\nThe True Wife’s Scenario Chapter 54\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Seasons of Blossom\n",
+      "Chapter_Update": "\nSeasons Of Blossom Chapter 120\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Peony Elegy: No Desires\n",
+      "Chapter_Update": "\nPeony Elegy: No Desires Chapter 41\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "Requiem of the Shogun\n",
+      "Chapter_Update": "\nRequiem Of The Shogun Vol.3 Chapter 15\n",
+      "Time_Update": "6 hours ago"
+    },
+    {
+      "Name": "The Villainess Who Steals the Heroine's Heart\n",
+      "Chapter_Update": "\nThe Villainess Who Steals the Heroine's Heart 8\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "Yuujin ni 500 Yen Kashitara Shakkin no Kata ni Imouto wo Yokoshitekita no Dakeredo, Ore wa Ittai Dou Sureba Iin Darou\n",
+      "Chapter_Update": "\nYuujin ni 500 Yen Kashitara Shakkin no Kata ni Imouto wo Yokoshitekita no Dakeredo, Ore wa Ittai Dou Sureba Iin Darou 9\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "Why is My Crush so Hard on Me\n",
+      "Chapter_Update": "\nWhy is My Crush so Hard on Me 4\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "Matagi Gunner\n",
+      "Chapter_Update": "\nMatagi Gunner 4\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "Requiem of the Shinsengumi\n",
+      "Chapter_Update": "\nRequiem of the Shinsengumi 15\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "The Professor Who Reads Love Stories\n",
+      "Chapter_Update": "\nThe Professor Who Reads Love Stories 41\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "Arknights: 123 Rhodes Island!?\n",
+      "Chapter_Update": "\nArknights: 123 Rhodes Island!? 40\n",
+      "Time_Update": "7 hours ago"
+    },
+    {
+      "Name": "Circumstances of Changing Bodies\n",
+      "Chapter_Update": "\nCircumstances of Changing Bodies Chapter 79\n",
+      "Time_Update": "7 hours ago"
+    }
+  ],
+  "Hot_Manga": [
+    {
+      "Name_hot": "Bleach",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201512/201512220937536093.jpg",
+      "Chapter_hot": "Bleach Chapter 686.5"
+    },
+    {
+      "Name_hot": "One Piece",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220937527222.jpg",
+      "Chapter_hot": "One Piece Vol.TBE Ch.1080"
+    },
+    {
+      "Name_hot": "SHOKUGEKI NO SOMA",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201507/201507120857172490.jpg",
+      "Chapter_hot": "Shokugeki no Soma 315.3"
+    },
+    {
+      "Name_hot": "Solo Leveling",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201811/201811042040243359.jpg",
+      "Chapter_hot": "Solo Leveling 192"
+    },
+    {
+      "Name_hot": "RULER OF THE LAND",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220938509575.jpg",
+      "Chapter_hot": "Ruler of the Land 650"
+    },
+    {
+      "Name_hot": "Fairy Tail",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220936058453.jpg",
+      "Chapter_hot": "Fairy Tail vol.57 ch.491.5"
+    },
+    {
+      "Name_hot": "Tales of Demons and Gods",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201508/201508111350111481.jpg",
+      "Chapter_hot": "Tales of Demons and Gods 425"
+    },
+    {
+      "Name_hot": "Naruto",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220827158780.jpg",
+      "Chapter_hot": "Naruto vol.45 ch.420"
+    },
+    {
+      "Name_hot": "Boku no Hero Academia",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220939226997.jpg",
+      "Chapter_hot": "Boku no Hero Academia Chapter 384"
+    },
+    {
+      "Name_hot": "NANATSU NO TAIZAI",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220939007398.jpg",
+      "Chapter_hot": "Nanatsu no Taizai Ch. 346.6 The rain forest invites the beginning Omake"
+    },
+    {
+      "Name_hot": "ONEPUNCH-MAN bad",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220916067769.jpg",
+      "Chapter_hot": "One-Punch Man Chapter 176"
+    },
+    {
+      "Name_hot": "KINGDOM",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220939351863.jpg",
+      "Chapter_hot": "Kingdom Chapter 752.1"
+    },
+    {
+      "Name_hot": "666 Satan",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503212317518106.jpg",
+      "Chapter_hot": "666 Satan Ch.148"
+    },
+    {
+      "Name_hot": "Combat Continent",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503282201391378.jpg",
+      "Chapter_hot": "Combat Continent 265"
+    },
+    {
+      "Name_hot": "NOBLESSE",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220924523608.jpg",
+      "Chapter_hot": "Noblesse Chap 447"
+    },
+    {
+      "Name_hot": "CHANGE GUY",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503300109009866.jpg",
+      "Chapter_hot": "Change Guy 338"
+    },
+    {
+      "Name_hot": "HATSUKOI (KAKINE)",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201603/201603151322057986.jpg",
+      "Chapter_hot": "Hatsukoi (Kakine) 5.5"
+    },
+    {
+      "Name_hot": "Hajime no Ippo",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220921302087.jpg",
+      "Chapter_hot": "Hajime no Ippo 1417"
+    },
+    {
+      "Name_hot": "GREEN WORLDZ",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220939413028.jpg",
+      "Chapter_hot": "Green Worldz ch.112"
+    },
+    {
+      "Name_hot": "THE GAMER",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220938197299.jpg",
+      "Chapter_hot": "The Gamer 457"
+    },
+    {
+      "Name_hot": "HISTORY'S STRONGEST DISCIPLE KENICHI",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220744241365.jpg",
+      "Chapter_hot": "History's Strongest Disciple Kenichi Chapter 583.005"
+    },
+    {
+      "Name_hot": "Ares",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503212017129853.jpg",
+      "Chapter_hot": "Ares vol.24 ch.000"
+    },
+    {
+      "Name_hot": "Toriko",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220938308005.jpg",
+      "Chapter_hot": "Toriko 383"
+    },
+    {
+      "Name_hot": "BLACK CLOVER",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201504/201504050913031170.jpg",
+      "Chapter_hot": "Black Clover Chapter 356"
+    },
+    {
+      "Name_hot": "Star Martial God Technique",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201610/201610302032517404.jpg",
+      "Chapter_hot": "Star Martial God Technique Chapter 634"
+    },
+    {
+      "Name_hot": "Karate Shoukoushi Kohinata Minoru",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220938296772.jpg",
+      "Chapter_hot": "Karate Shoukoushi Kohinata Minoru Ch. 502 KSKM Bangaihen Part 2"
+    },
+    {
+      "Name_hot": "PANLONG",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220918478406.jpg",
+      "Chapter_hot": "Panlong Ch. 216 Season 2 Chapter 46"
+    },
+    {
+      "Name_hot": "Versatile Mage",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201806/201806260811425791.jpg",
+      "Chapter_hot": "Versatile Mage Chapter 1017"
+    },
+    {
+      "Name_hot": "NANA TO KAORU",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220939517064.jpg",
+      "Chapter_hot": "Nana to Kaoru Chap 99.5"
+    },
+    {
+      "Name_hot": "NOZOKI ANA",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220532538011.jpg",
+      "Chapter_hot": "Nozoki Ana Vol.5 Chapter 45.5"
+    },
+    {
+      "Name_hot": "The God of High School",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220937424927.jpg",
+      "Chapter_hot": "The God Of High School Chapter 572"
+    },
+    {
+      "Name_hot": "RED STORM",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201603/201603151338299640.jpg",
+      "Chapter_hot": "Red Storm Vol. 16 Ch. 388.5 Epilogue"
+    },
+    {
+      "Name_hot": "Prison School",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201504/201504080826397151.jpg",
+      "Chapter_hot": "Prison School Vol. 28 Ch. 277.5 End of Play"
+    },
+    {
+      "Name_hot": "DOMESTIC NA KANOJO",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220939001124.jpg",
+      "Chapter_hot": "Domestic na Kanojo Vol. 28.5 Ch. 276.5 Filling Lips"
+    },
+    {
+      "Name_hot": "Dragon Ball",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220938438560.jpg",
+      "Chapter_hot": "Dragon Ball Vol. 42 Ch. 519.5 Kanzenban Ending"
+    },
+    {
+      "Name_hot": "Tokyo Ghoul",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220851417986.jpg",
+      "Chapter_hot": "Tokyo Ghoul Chapter 100.5"
+    },
+    {
+      "Name_hot": "MINAMOTO-KUN MONOGATARI",
+      "Image_hot": "https://ta1.yx247.com/files/img/logo/201503/201503220936119344.jpg",
+      "Chapter_hot": "Minamoto kun Monogatari Vol. 16 Ch. 358.5"
+    }
+  ],
+  "New_Manga": [
+    {
+      "Name_Manga_New": "You're My Unknown Variable",
+      "Chapter_New": "You're My Unknown Variable 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304100610446815.jpg"
+    },
+    {
+      "Name_Manga_New": "Hachioji Meibutsu Tengu no Koi",
+      "Chapter_New": "Hachioji Meibutsu Tengu no Koi 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304100610164523.jpg"
+    },
+    {
+      "Name_Manga_New": "Erotical Wizard With Twelve Brides",
+      "Chapter_New": "Erotical Wizard With Twelve Brides 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304100307293160.png"
+    },
+    {
+      "Name_Manga_New": "The Deviless’s Impression of a Princess",
+      "Chapter_New": "The Deviless’s Impression of a Princess Chapter 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304100204034840.png"
+    },
+    {
+      "Name_Manga_New": "Sweet Rendezvous",
+      "Chapter_New": "Sweet Rendezvous",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304092001271496.png"
+    },
+    {
+      "Name_Manga_New": "Tokidoki Bosotto Roshia-go de Dereru Tonari no Alya-san",
+      "Chapter_New": "Tokidoki Bosotto Roshia-go de Dereru Tonari no Alya-san 14",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304091315098541.jpg"
+    },
+    {
+      "Name_Manga_New": "\"My Husband Has Been Cool Lately\"",
+      "Chapter_New": "\"My Husband Has Been Cool Lately\"",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304091209581994.jpg"
+    },
+    {
+      "Name_Manga_New": "TenPuru -No One Can Live on Loneliness-",
+      "Chapter_New": "TenPuru -No One Can Live on Loneliness- 69",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304091017238411.jpg"
+    },
+    {
+      "Name_Manga_New": "Can't Buy Me Love",
+      "Chapter_New": "Can't Buy Me Love Chapter 9",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304090900133377.jpg"
+    },
+    {
+      "Name_Manga_New": "Machikado Mazoku Matome (4-Koma) (Soregashi 16bit)",
+      "Chapter_New": "Machikado Mazoku Matome (4-Koma) (Soregashi 16bit) 14",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304090704087673.jpg"
+    },
+    {
+      "Name_Manga_New": "Oshi to Deaitakunai Joshidaisei",
+      "Chapter_New": "Oshi to Deaitakunai Joshidaisei 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304090605271701.jpg"
+    },
+    {
+      "Name_Manga_New": "Seclusion With Apprentices",
+      "Chapter_New": "Seclusion With Apprentices 3",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304090109308666.jpg"
+    },
+    {
+      "Name_Manga_New": "Soredemo Kimi wo Shiawaseni shitai",
+      "Chapter_New": "Soredemo Kimi wo Shiawaseni shitai Ch.006",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304090102181219.jpg"
+    },
+    {
+      "Name_Manga_New": "R/B",
+      "Chapter_New": "R/B",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304090003536693.jpg"
+    },
+    {
+      "Name_Manga_New": "Asa made renai chuu! ~ Osananajimi wa tokimekanai? ~",
+      "Chapter_New": "Asa made renai chuu! ~ Osananajimi wa tokimekanai? ~ 3",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304082102321721.jpg"
+    },
+    {
+      "Name_Manga_New": "Safety First",
+      "Chapter_New": "Safety First 0",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304082002242360.jpg"
+    },
+    {
+      "Name_Manga_New": "Love Live! School Idol Diary: School Idol Quest",
+      "Chapter_New": "Love Live! School Idol Diary: School Idol Quest 10",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081904064620.png"
+    },
+    {
+      "Name_Manga_New": "Reincarnation Idol & Idol Freak Night",
+      "Chapter_New": "Reincarnation Idol & Idol Freak Night 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081804475571.jpg"
+    },
+    {
+      "Name_Manga_New": "Death Game Begins",
+      "Chapter_New": "Death Game Begins 2",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081703034439.png"
+    },
+    {
+      "Name_Manga_New": "Yuurei Ni Natta Kara Pantsu Misete Mo Barenai Yone!?",
+      "Chapter_New": "Yuurei Ni Natta Kara Pantsu Misete Mo Barenai Yone!? Vol.1 Chapter 2",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081700156569.jpg"
+    },
+    {
+      "Name_Manga_New": "Takatora-kun to Omegatachi",
+      "Chapter_New": "Takatora-kun to Omegatachi 2",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081601495403.jpg"
+    },
+    {
+      "Name_Manga_New": "I've Waited For The Fairy Teacher For Hundreds Of Years",
+      "Chapter_New": "I've Waited for the Fairy Teacher for Hundreds of Years Chapter 24",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081500343112.jpg"
+    },
+    {
+      "Name_Manga_New": "Feast of Fear",
+      "Chapter_New": "Feast of Fear 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304081033278990.jpg"
+    },
+    {
+      "Name_Manga_New": "MookHyang – Dark Lady",
+      "Chapter_New": "MookHyang – Dark Lady Chapter 173",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080953454994.png"
+    },
+    {
+      "Name_Manga_New": "Pittosporum",
+      "Chapter_New": "Pittosporum 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080858576030.png"
+    },
+    {
+      "Name_Manga_New": "Rejecting Love",
+      "Chapter_New": "Rejecting Love Ch.030",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080855409907.jpg"
+    },
+    {
+      "Name_Manga_New": "Nakigao Yuri Anthology",
+      "Chapter_New": "Nakigao Yuri Anthology 2",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080658194118.jpg"
+    },
+    {
+      "Name_Manga_New": "Doujin Onna Yuri Anthology",
+      "Chapter_New": "Doujin Onna Yuri Anthology 4",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080657298504.png"
+    },
+    {
+      "Name_Manga_New": "Stuck In My Sister's Dating Sim",
+      "Chapter_New": "Stuck In My Sister's Dating Sim Chapter 15",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080550132465.jpg"
+    },
+    {
+      "Name_Manga_New": "Introduction to Survival",
+      "Chapter_New": "Introduction to Survival 0",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080501569565.jpg"
+    },
+    {
+      "Name_Manga_New": "Juvenile Offender",
+      "Chapter_New": "Juvenile Offender 4",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080458334663.jpg"
+    },
+    {
+      "Name_Manga_New": "The Pure☆Knight’S Shining Journey",
+      "Chapter_New": "The Pure☆Knight’S Shining Journey Chapter 5.5",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080351019087.jpg"
+    },
+    {
+      "Name_Manga_New": "Maronie Oukoku no Shichinin no Kishi",
+      "Chapter_New": "Maronie Oukoku no Shichinin no Kishi 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080302244512.jpg"
+    },
+    {
+      "Name_Manga_New": "SD Gundam Musha Banchō Fūunroku",
+      "Chapter_New": "SD Gundam Musha Banchō Fūunroku 1",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080302106389.jpg"
+    },
+    {
+      "Name_Manga_New": "The Sum of Us",
+      "Chapter_New": "The Sum of Us Chapter 13",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304080257036628.jpg"
+    },
+    {
+      "Name_Manga_New": "Rebirth After A Thousand Years",
+      "Chapter_New": "Rebirth After A Thousand Years 0",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304072354084614.jpg"
+    },
+    {
+      "Name_Manga_New": "Return of the Scholar",
+      "Chapter_New": "Return of the Scholar 137",
+      "Thumb": "https://ta1.yx247.com/files/img/logo/202304/202304072251424411.jpg"
+    }
+  ]
+}
+1

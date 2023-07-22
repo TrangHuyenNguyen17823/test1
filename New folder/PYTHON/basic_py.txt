@@ -1,0 +1,77 @@
+PYTHON
+
+- comment dùng dấu # trước dòng comment
+vd: # đây là comment
+- comment nhiều dòng dùng ''' comment'''
+
+- khai báo biến trong python không cần kiểu dữ liệu, vì python tự hiểu theo cách viết giá trị gán vào biến để xác định
+
+VD: a= 5; # a hiểu là số nguyên
+    b= "kkkk"; b hiểu là chuỗi kí tự
+    c= 5.5; c hiểu là số thực
+
+- kiểm tra kiểu dữ liệu của biến
+print(type(<tên biến>))
+
+
+# lấy toàn bộ nội dung của thư viện decimal
+from decimal import*
+# lấy tối đa 30 chữ số phần nguyên và phần thập phâm decimal
+getcontext().prec = 3
+print(Decimal(10)/Decimal(3))  # kết quả là: 10/3 = 3.33, chú ý chỗ này Decimal phải viết hoa
+print(10/3) # kết quả là: 3.3333333333... ghới hạn 15 chữ số
+** sau nhập số nhập tới chuối thì dùng sc.nextLine();
+
+
+
+- kiểu phân số trong python
+
+from fractions import*
+frac= Fraction(6,9)
+print(frac)		: tự rút gọn phân số khi in ra
+print(type(frac)) 
+
+from fractions import*
+frac1= Fraction(6,9)
+frac2= Fraction(5,10)
+frac3= frac1+ frac2
+print(frac3) 
+
+- kiểu số phức trong python
+c = complex(2,5)
+print(c)
+print(c.real)
+print(c.imag)
+
+- các phép toán
+ a//b : chia lấy nguyên
+ a%y  : chia lấy dư
+ a**b : a lũy thừa b
+
+- chuỗi có thể sử dụng nháy đơn '' hoặc nháy kép, tùy từng trường hợp sử dụng
+VD: nháy đơn str =  ' I am Trang ';
+    nháy kép str = " I'm Trang "; 
+trong chuỗi có cả nháy đơn và nháy kép???
+sd: /' : in ra kí tự '
+    //" : in ra kí tự "
+
+- chuỗi nhiều dòng viết trong cặp nháp 3:  ''' contents '''  hoặc  """ contents """
+VD:
+str= ''' Họ tên: Nguyen Huyen Trang 
+	 Lớp: CNTT01
+	 Dia chi: Ha noi '''
+print(str)
+
+- có thể cộng chuỗi bằng dấu + 
+
+- strA="HowKteam"
+  strB=strA[3]
+  strC= strB in strA
+print(strA)
+print(strB)
+print(strC)
+
+- split() lsplit() rsplit()
+- isupper() isLower()
+- find() <> inDex()
+-

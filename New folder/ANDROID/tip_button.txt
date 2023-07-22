@@ -1,0 +1,4 @@
+Tip:
+ - Button mặc định sẽ có effect click
+ - Nhưng khi custom button nhưng dùng view group khác (Linear, CardView, Relative, ...) lúc đó click vào view sẽ không có effect click, UX -> tệ
+ - Thêm android:foreground="?android:attr/selectableItemBackground" vào view group, sẽ tạo hiệu ứng ripple giống click button

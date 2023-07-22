@@ -1,0 +1,92 @@
+- responsive
+- viewport
+- grid view
+- media query 
+
+max-min width : [a,b]
+
+alt+shift+ xuống: nhân bản
+
+chỉnh ảnh đen trắng
+.about-items img{
+    filter: grayscale(100%);
+     -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+     -ms-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+}
+
+keyfames : animation
+
+del: tạo chữ bị gạch ngang
+
+text- transform: uppercase: chữ hoa
+		....: viết thường, chữ đầu mỗi thàng phần viết hoa, ...
+
+mark : tạo highline - text: mặc định - chữ đen, line màu vàng ~ có thể style lại
+
+lable - input
+
+-------- font roboto -----------
+<link rel="preconnect" href="https://fonts.googleapis.com">
+font-family: 'Roboto', sans-serif;
+
+transform: scela(0/1): hiệu ứng phóng to khi hover
+
+-------- tạo chú thích --------
+a {
+                color: rgb(21, 40, 58);
+                text-decoration: none;
+                position: relative;
+            }
+            a[data-tooltip] {
+                border-bottom: 1px dotted #333;
+            }
+            a[data-tooltip]::before {
+                content: attr(data-tooltip);
+                position: absolute;
+                bottom: 100%;
+                background-color: #333;
+                border-radius: 3px;
+                color: #fff;
+                padding: 8px 10px;
+            }
+            a[data-tooltip]::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #333;
+                left: 200px;
+            }
+
+transparent : trong suốt
+
+hủy đi mặc địch của checkbox: apperance: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

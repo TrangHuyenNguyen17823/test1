@@ -1,0 +1,766 @@
+* Cấu trúc 1 class Java
+- khi để "public class" thì tên file phải giống tên class
+------------------------------------------------------------------
+* Biến trong Java
+- khai báo: 
+	String name;
+	float height;
+	int age;
+
+- gán giá trị cho biến;
+	name = "Trang";
+	hieght = 1.7f; // hết thúc giá trị số thực phải có kí tự 'f'
+	age = 21;
+
+- in giá trị biến:
+	System.out.println(name);
+	System.out.println(height);
+	System.out.println(age);
+
+- chương trình đầy đủ như sau:
+public class HelloWorld{
+
+	public static void main(String [] args) {
+	String name;
+	float height;
+	int age;
+	name = "Trang";
+	height = 1.7f;
+	age = 21;
+	System.out.println(name);
+	System.out.println(height);
+	System.out.println(age);
+	}
+}
+-----------------------------------------------------------------
+* Kiểu dữ liệu
+- Nguyên thủy:  
+	+ số nguyên:  byte, short, int , long
+	+ số thực: float, double
+	+ boolean: đúng/sai
+	+ char: 'A'
+- Đối tượng:
+	+ String: "ABC"
+	+ Aray: mảng
+	+ Double: số thực
+------------------------------------------------------------------
+* Hằng số: final <kiểu dữ liệu> <tên hằng> = <giá trị>
+VD: final int x= 10;
+- Khi gán x là hằng thì sau đó giá trị của x không được thay đổi nữa, nếu cố tình 
+thay đôi => lỗi
+-----------------------------------------------------------------------
+* Cách ghi chú trong JAva
+- Có 3 cách:
+TH1: Ghi chú trên 1 dòng
+
+	 // Nội dung ghi chú
+
+TH2: Ghi chú trên nhiều dòng
+
+	/*
+		Nội dung ghi chú 1
+		Nội dung ghi chú 2
+	*/
+
+TH3: Chú thích để tạo tài liệu hướng dẫn Javadoc
+
+	/** 
+		* Nội dung chú thích 1
+		* Nội dung chú thích 2
+	*/
+------------------------------------------------------------------------
+* Cách nhập dữ liệu từ bàn phím
+
+public static void main(String [] args){
+
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Nhap vao ho va ten: ");
+	String hoTen = sc.nextLine();
+}
+
+- Nhập:
++ nextBoolean() : đọc 1 giá trị boolean từ bàn phím
++ nextByte() 	: đọc 1 giá trị byte từ bàn phím
++ nextDouble()	: đọc 1 giá trị double từ bàn phím
++ nextFloat()	: đọc 1 giá trị float từ bàn phím
++ nextInt()	: đọc 1 giá trị int từ bàn phím
++ nextLine()	: đọc 1 giá trị String từ bàn phím *
++ nextLong()	: đọc 1 giá trị long từ bàn phím
++ nextShort()	: đọc 1 giá trị short từ bàn phím
+
+--------------------------------------------------------------------------
+* Ép kiểu:
+- Ép kiểu ngầm định: khi một kiểu dữ liệu được gá cho 1 biến của 1 kiểu khác thifw tự
+động chuyển kiểu 
+- Điều kiện:
+	+ hai kiểu phải tương thích
+	+ kiểu đích phải lớn hơn kiểu nguồn
+		vd: int --> float
+
+- Ép kiểu tường minh: Khi cần chuyển sang kiểu có độ chính xác cao hơn
+	+ float --> int
+		vd: float a =  21.3476f ;
+		    int b = (int) a + 5
+
+VD:
+
+// ép kiểu trong java
+
+public class Helloworld{
+	public static void main(String[] args ){
+		int a = 100;
+		int b = 2;
+		System.out.println("a = "+a);
+		System.out.println("b = "+b);
+
+		float c = a; // ép kiểu ngầm định float c = (float)a
+		float d = b;
+
+		System.out.println("c= "+c);
+		System.out.println("d= "+d);
+
+		// ép kiểu tường minh
+		float e = 3.5f;
+		float f = 9.5f;
+
+		int g=(int)e;
+		int h=(int)f;
+		System.out.println("e= "+g);
+		System.out.println("f= "+h);
+
+		// ép kiểu giữa biến nguyên thủy và đối tượng
+		int x = new Integer(32);
+		System.out.println("x = "+x);
+	}
+}
+-------------------------------------------------------------------------------------
+* các phép toán  + - * / %
+import java.util.Scanner;
+public class Helloworld{
+    public static void main(String[] args)
+    {
+        // khai báo biến
+        int a, b;
+
+        // nhập dữ liệu
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Nhap vao a = ");
+        a = sc.nextInt();
+        System.out.println("Nhap vao b = ");1
+        b = sc.nextInt();
+
+        int tong = a+b;
+        System.out.println("ket qua: "+tong);
+        System.out.println(a+ " + " +b+ " = " + tong);
+    }
+}
+-------------------------------------------------------------
+* các phép toán một ngôi
++
+- 
+++
+--
+!
+import java.util.Scanner;
+public class Helloworld{
+    public static void main(String[] args)
+    {
+        // khai báo biến
+        int a = 5;
+        boolean b= false;
+        // nhập dữ liệu
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Nhap vao a = ");
+        a = sc.nextInt();
+
+        System.out.println("-a : " +(-a)); 
+        System.out.println("+a : " +(+a)); 
+        System.out.println("!b : " +(!b));
+        System.out.println("---------------------"); 
+        System.out.println("++a = "+ ++a);
+        System.out.println("a++ = "+ a++);
+
+        System.out.println(+a);
+    }
+}
+
+----------------------------------------------------------------
+* cách gán dữ liệu
+
+import java.util.Scanner;
+public class Helloworld{
+    public static void main(String[] args)
+    {
+       // cách gán dữ liệu trong Java
+       /*
+        * a = b
+          a += b
+          a -= b
+          a *= b
+          a /= b
+          a %= b
+        */
+        int a, b =5;
+        a = b;
+        System.out.println("a = b : " +a);  // a = 5
+        a+=b;
+        System.out.println("a +=b : " +a);  // a = a + b  => a = 5 + 5
+        a%=b; // chia lấy dư
+        System.out.println("a%b : " +a);
+    }
+}
+
+-----------------------------------------------------------------------------
+
+* các phép toán so sánh và điều kiện trong java
+- phép so sánh
+==
+!=
+>
+<
+>=
+<=
+
+- phép toán điều kiện
+&& : và
+|| : hoặc
+
+import java.util.Scanner;
+public class Helloworld{
+    public static void main(String[] args)
+    {
+       int a =4, b=4;
+       if(a==b)
+       {
+        System.out.println("a=b");
+       }
+       else
+       {
+        System.out.println("a!=b");
+       }
+       if(a==3 && b==4)
+       {
+        System.out.println("TRUE");
+       }
+       else{
+        System.out.println("   FLASE");
+       }
+
+       //--------------------
+       System.out.println(a +" == " +b +" : " +(a==b));
+       System.out.println("co it nhat 1 so chan: "+ (a%2==0 || b%2==0));
+    }
+}
+
+---------------------------------------------------------
+* toán tử điều kiện - 3 ngôi
+
+ 	(boolean -expression)? if- true - return - this : if-flase-return-this
+
+import java.util.Scanner;
+public class Helloworld{
+    public static void main(String[] args)
+    {
+       Scanner sc= new Scanner(System.in);
+       System.out.println("Nhap a = ");
+       int a= sc.nextInt();
+        String kq=(a%2==0)? "so chan":"so le";
+        System.out.println(a+ " la "+ kq);
+    }
+}
+----------------------------------------------------------------------
+* lớp math và các hàm toán học
+import java.util.Scanner;
+public class Helloworld{
+    public static void main(String[] args)
+    {
+       // Math.PI : hằng số pi
+       double g45=Math.PI/4;
+       // Math.abs() : trị tuyệt đối
+       int a=Math.abs(10); //10
+       int b=Math.abs(-20); //20
+       // Math.ceil() : trả về gt double là số làm tròn TĂNG bằng giá trị nguyên gần nhất
+       double c= Math.ceil(7.434);
+       // Math.floor() : trả về số làm tròn GIẢM gần nhất
+       double d= Math.floor(4.222);
+       Math.max() lấy số lớn trong hai số
+int m = Math.max(10, 20);  // 20
+
+Math.min lấy số nhỏ
+int m = Math.min(10, 20);  // 10
+
+Math.pow lấy lũy thừa (cơ-số, số mũ)
+double p = Math.pow(2, 3); // 8.0
+
+Math.Math.sqrt() khai căn
+double a = Math.sqrt(9);//3
+
+Math.sin(), Math.cos() sin và cos của góc đơn vị radian
+double s = Math.sin(Math.PI/2);//1
+
+Math.random() sinh số double ngẫu nhiên từ 0 đến 1
+double r = Math.random();
+
+Math.toDegrees() đổi góc radian thành độ
+double goc = Math.toDegrees(Math.PI/2); //90
+
+Math.toRadians() đổi góc đơn vị độ ra radian
+double goc = Math.toRadians(45);//0.7853981633974483
+
+- round : làm tròn
+Math.round((ChuVi*100.0)/100);
+    }
+}
+
+----------------------------------------------------------------------
+* if - else, switch- case : giống c/c++
+
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        int x;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Nhap vao x  = ");
+        x= sc.nextInt();
+        switch(x)
+        {
+            case 1:{
+                System.out.println("Ban da nhap so 1");
+                break;
+            }
+            case 2:{
+                System.out.println("Ban da nhap so 2");
+                break;
+            }
+            case 3:{
+                System.out.println("Ban da nhap so 3");
+                break;
+            }
+            case 4:{
+                System.out.println("Ban da nhap so 4");
+                break;
+            }
+            case 5:{
+                System.out.println("Ban da nhap so 5");
+                break;
+            }
+            default:
+            {
+                System.out.println("x ko thao man!");
+            }
+        }
+    }
+}
+
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        int x;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Nhap vao x  = ");
+        x= sc.nextInt();
+        if(x==2)
+        {
+            System.out.println(x + " la thang co 28 ngay hoac 29 ngay!");
+        }
+        else if(x==1|| x==3||x==5||x==7||x==8||x==10||x==12)
+        {
+            System.out.println(x+ " la thang co 31 ngay!");
+        }
+        else{
+            System.out.println(x +" la thang co 30 ngay!");
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------
+* Vòng lặp for
+
+	for( initialization; loopContinuationTest; increment)
+	{
+		Statements;
+	}
+
+vd: xuất bảng cửu chương
+
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        for( int i=1; i<10; i++)
+        {
+            for( int j =1; j<10; j++)
+            {
+                System.out.println(i+ " x " + j+ " = " + i*j);
+            }
+            System.out.println();
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------
+* Vòng lặp while , do- while 
+
+	cú pháp:
+	while  (Condition)
+	{
+    		Statement(s)
+	}
+
+vd:
+
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        int x =1;
+        do{
+            System.out.println("abc");
+            x++;
+        }
+        while(x!=5);
+    }
+}
+
+-----------------------------------------------------------------------------------------------------
+* Chuyển từ thập phân sang nhị phân
+
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        int x;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Nhap vao so x = ");
+        x = sc.nextInt();
+        do
+        {
+            System.out.print(x%2);
+            x/=2;
+        }
+        while(x!=0);
+    }
+}
+-----------------------------------------------------------------------------------------------------------
+* Cách sử dụng 
+- break
+- continue
+- return : trả về giá trị hoặc ko trả về gì hết ( giống c/c++)
+
++) continue và break có thể dùng cùng với label hoặc không
++) lable: dùng để chỉ định chỗ cho các lệnh continue và break
+
+vd 1: // không dùng lable
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        int out, in =0;
+        for( out =0; out<10; out++)
+        {
+            for( in =0; in<20; in++)
+            {
+                if(in>10)
+                {
+                    break;
+                }
+            }
+            System.out.println(" ben trong vong lap: "+in);
+        }
+        System.out.println("ben ngoai vong lap: "+out);
+    }
+}
+
+NX: giống break ở c/c++, continue tương tự
+-----------------------------
+vd 2: // dùng lable
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        int out, in =0;
+        outer: for( out =0; out<10; out++)
+        {
+            for( in =0; in<20; in++)
+            {
+                if(in>10)
+                {
+                    break outer;
+                }
+            }
+            System.out.println(" ben trong vong lap: "+in);
+        }
+        System.out.println("ben ngoai vong lap: "+out);
+    }
+}
+
+- outer chính là 1 lable, lable tùy người dùng đặt tên. 
+- break outer; là dùng ở vòng lặp thứ "out" có outer gần nhất
+// continue: bỏ qua đoạn code bên dưới nó 
+
+---------------------------------------------------------------
+* Cách bắt lỗi ngoại lệ bằng try catch trong lập trình
+- sd khối try, catch, finally để bắt giữ các ngoại lệ
+
+Cú pháp: 
+
+try {
+	statement1(s) ---------------------> khối lệnh có thế ném ngoại lệ
+}
+catch ( exceptiontype name){
+	statement1(s) ---------------------> khối lệnh sẽ thực hiện nếu ngoại lệ xảy ra
+}
+catch ( exceptiontype name){
+	statement1(s) ---------------------> khối lệnh sẽ thực hiện nếu ngoại lệ xảy ra
+}
+finally {
+	statemant3(s) ---------------------> khối lệnh sẽ thực hiện bất chấp ngoại lệ xảy ra hay không
+}
+
+Vd:
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int x=0;
+        try{ //cố gắng thử điều kiện này trc
+            System.out.println("Nhap vao so nguyen x = ");
+            x= sc.nextInt();
+        }
+        catch( Exception e)// khi điều kiện try sai
+        {
+            System.out.println("Nhap du lieu sai!");
+        }
+        finally{ // dù đúng hay sai thì vẫn chạy code ở trong finally
+            System.out.println("Finally!");
+        }
+        System.out.println("Gia tri nhap la : "+x);
+        System.out.println("Ket thuc chuong trinh!");
+    }
+}
+
+-----------------------------------------------------------------------
+* MẢNG TRONG JAVA
+
+import java.util.Scanner;
+public class Helloworld {
+    public static void main( String[] args)
+    {
+        double[] mang1;
+        double mang2[];
+        mang1= new double[10];
+        Scanner sc=new Scanner(System.in);
+        double tong = 0;
+        // nhập mảng sử dụng vòng lặp
+        for( int i=0; i<mang1.length; i++)
+        {
+            System.out.print("Nhap phan tu thu "+(i+1)+ " : ");
+            mang1[i]= sc.nextDouble();
+            tong += mang1[i];
+        }
+        System.out.println("Tong mang 1 la: "+tong);
+        // khai báo và khởi tạo mảng
+        mang2 = new double[]{1, 2, 3, 4, 5};
+    }
+}
+----------------------------------------------------------------------------------------
+// nhap vao chuoi bat ki va hien thi ra man hinh
+import java.util.Scanner;
+public class Helloworld{
+
+    public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner (System.in);
+        int []a;
+        int []b;
+        int []c;
+        int n; 
+        n=sc.nextInt();
+        a=new int [n];
+        for( int i=0; i<n; i++)
+        {
+            a[i]= sc.nextInt();
+        }
+        int m=0;
+        b= new int[n];
+        for( int i=0; i<n; i++)
+        {
+            if(isPrime(a[i])== true)
+            {
+                
+                b[m]=a[i];m++;
+            }
+        }
+        for( int i=0; i<m; i++)
+        {
+            System.out.print(b[i]+" ");
+        }
+    }
+}
+
+========================================================================================
+			HƯỚNG ĐỐI TƯỢNG TRONG JAVA
+* các phương pháp lập trình
+- lập trình không có cấu trúc
+- lập trình có cấu trúc ( lập trình thủ tục ) 
+- lập trình chức năng
+- lập trình logic
+- lập trình hướng đôi tượng
+
+========================================================================================
+
+*** PHƯƠNG THỨC GET, SET TRONG JAVA
+
+get: trả về
+
+	public int getDay(){
+		return this.day;
+		}
+
+set: set lại giá trị
+
+	public void setDay(){
+		this.Day= Day;
+		}
+
+*** PHƯƠNG THỨC toString
+
+	public String toString()
+	{
+		return this.ngay+"/"+this.thang+"/"+this.nam;
+	}
+-----------------------------------------------------------------------------------
+*** KẾ THỪA: vd lớp HocSinh kế thừa lại lớp ConNguoi
+
+import java.util.Scanner;
+class ConNguoi {
+	
+	private String hoTen;
+	private int namSinh;
+	
+	public String getHoTen() {
+		return hoTen;
+	}
+	public void setHoTen(String hoTen) {
+		this.hoTen = hoTen;
+	}
+	public int getNamSinh() {
+		return namSinh;
+	}
+	public void setNamSinh(int namSinh) {
+		this.namSinh = namSinh;
+	}
+	public ConNguoi(String hoTen, int namSinh) {
+		super();
+		this.hoTen = hoTen;
+		this.namSinh = namSinh;
+	}
+	public ConNguoi()
+	{
+		this.hoTen="";
+		this.namSinh=0;
+	}
+	public void nhap()
+	{
+		System.out.println("Ho ten: ");
+		Scanner sc= new Scanner(System.in);
+		this.hoTen= sc.nextLine();
+		System.out.println("Nam sinh: ");
+		this.namSinh= sc.nextInt();
+	}
+	public void xuat()
+	{
+		System.out.println("Ho ten: "+ this.hoTen);
+		System.out.println("Nam sinh: "+ this.namSinh);
+	}
+}
+
+class HocSinh extends ConNguoi {
+	private String tenLop;
+	private String tenTruong;
+	public String getTenLop() {
+		return tenLop;
+	}
+	public void setTenLop(String tenLop) {
+		this.tenLop = tenLop;
+	}
+	public String getTenTruong() {
+		return tenTruong;
+	}
+	public void setTenTruong(String tenTruong) {
+		this.tenTruong = tenTruong;
+	}
+	public HocSinh()
+	{
+		this.tenLop="";
+		this.tenTruong="";
+	}
+	public HocSinh(String hoTen, int namSinh, String tenLop, String tenTruong )
+	{
+		super(hoTen, namSinh);
+		this.tenLop= tenLop;
+		this.tenTruong= tenTruong;
+	}
+	@Override 
+	public void nhap()
+	{
+		Scanner sc= new Scanner(System.in);
+		super.nhap();
+		System.out.println("Ten lop: ");
+		this.tenLop= sc.nextLine();
+		System.out.println("Ten truong: ");
+		this.tenTruong= sc.nextLine();
+	}
+	public void xuat()
+	{
+		super.xuat();
+		System.out.println("Ten lop: "+this.tenLop);
+		System.out.println("Ten truong: "+this.tenTruong);
+	}
+}
+public class CN_HS {
+	public static void main(String[] args)
+	{
+		HocSinh hs= new HocSinh();
+		hs.nhap();
+		hs.xuat();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

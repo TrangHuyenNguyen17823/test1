@@ -1,0 +1,51 @@
+**** LIST IN PYTHON ****
+# giới hạn bởi ngoặc []
+# các phần tử cách nhau bởi dấu phẩy
+# list có khả năng chứa mọi giá trị đối tượng của python: int, float, string, list, ...
+
+# cách khai báo 
+	a = []    -> 1 list rỗng
+	a = [1, 2, 2,3, 'Trang', [4,5,6]]
+
+
+# truy cập các phần tử của List
+
+	list1 = ['java', 'python', 'php', 'c++']
+	print(list[1]) 
+	kq: python
+
+
+# chỉ mục âm
+
+- lập chỉ mục âm có nghĩa là bắt đầu từ cuối, -1 là vị trí phần tử cuối cùng, -2 là vị trí phần tử cuối thứ 2 
+
+	list1 = ['java', 'python', 'php', 'c++']
+	print(list[-1]) 
+	kq: c++
+
+# phạm vi chỉ mục: bạn có thể chỉ định một phạm vi chỉ mục bằn cách chỉ định nới bắt đầu và nơi kết thúc phạm vi. Khi chỉ định một phạm vi, giá trị trả về sẽ là một List mới với các chỉ mục được chỉ định
+	fruits = ['apple', 'banana', 'orange, 'kiwi', melon']
+	print(fruits[2:4])  -> lấy >=2 và <4
+	kq: ['orange', 'kiwi']
+
+- loại bỏ giá trị bắt đầu, phạm vi sẽ bắt đầu từ chỉ mục đầu tiên 
+	VD: print(fruits[:4])
+
+- tương tự, loại bỏ giá trị cuối, phạm vi sẽ đi tới cuối danh sách
+	VD: print(fruits[2:])
+
+- phạm vi của chỉ mục âm: trả về các mục từ chỉ mục -4(bao gồm) đến chỉ mục -1(không bao gồm)  VD: print(fruits[-4:-1])
+
+# Hoạt động cơ bản trên List trong Python
+- Bạn có thể thực hiện các hoạt động nối 2 list với toán tử + hoặc hoạt động lặp với * như trong các chuỗi. Điểm khác biệt là ở đây nó tạo một List mới, không phải là một chuỗi
+
+	a=['trang', 'huyen', 'nguyen']
+	b=['nguyen', 'thi', 'huyen']
+	print(a+b)
+	print(a*10)
+
+# thay đổi giá trị của item: ta dùng chỉ số và toán tử gán =
+	VD: fruits = ['apple', 'banana', 'orange']
+	    fruits[1] = "*Trang*"
+	    print(fruits)
+	    KQ: ['apple', '*Trang*', 'orange']

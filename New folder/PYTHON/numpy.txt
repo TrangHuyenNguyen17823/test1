@@ -1,0 +1,61 @@
+numpy trong python
+giao diện người dùng
+* các kiểu dữ liệu
+- number
+- list
+- string
+- tuple
+- dictionary
+L = [1 , 2 , "abc", [4,5,6]]: một list có thể chứa các phần tử bao gồm các kiểu khác và cả 1 list con nào đó
+
+- string ko thể cho truy nhập vào thay đổi
+vd: S= "Trang"
+S[2]= "o"
+--> lỗi
+
+
+L = [1 , 2 , "abc", [[4.1, 4.2],5,6]]
+print(L)
+print(L[3])
+print(L[3][0])
+print(L[3][0][0])
+print(L[-1])
+
+# list có thể thay đổi được giá trị các phần tử
+L[1]=5
+print(L)
+
+# sử dụng tuple
+T=(1,2,3)
+print(T[2])
+
+# sử dụng dictionary
+D={'Ten': "Trang", 'Tuoi: ':19, 45: "abc"}
+print(D)
+
+D={'Ten': "Trang", 'Tuoi: ':19, (1,2): "abc"}
+print(D)
+
+D={'Ten': "Trang", 'Tuoi: ':19, (1,[2,3]): "abc"}  # không thể dùng key là 1 list vì list có thể truy xuất để thay đổi
+print(D)
+
+- bất biến, khả biến ?
+
+- mặc định: string là True, các kiểu khác là flase
+print(0 or "Trang") : kiểm tra đến khi gặp True thì dừng
+print("Trang" and "tragn" and 0 and 1) : kiểm tra đến khi gặp False thì dừng
+
+-print("a" in"abc")
+
+- cú pháp đầy đủ của print
+
+print("So a la: {0}, so b la: {1}")
+print(f"So a la: {{10}}, so b la: {{}}")  # cach in ra {}
+
+
+for i, v enumerate()??
+
+
+
+
+

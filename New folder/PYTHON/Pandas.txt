@@ -1,0 +1,95 @@
+* Pandas trong python
+- Pandas là gì?
+- khái niệm Series, DataFrame
+- Các thao tác đọc cơ bản với DataFrame
+- Các thao tác sửa/xóa
+- Các thao tác thống kê/ sắp xếp
+- Vẽ biểu đồ với Pandas
+
+1. 
+- Thư viện Pandas trong python là 1 thư viện mã nguồn mở, hỗ trợ đắc lực trong thao tác dữ liệu, phân tích và xử lý dữ liệu mạnh mẽ
+- Thư viện này được sử dụng rộng rãi trong cả nghiên cứu lẫn phát triển các ứng dụng về khoa học dữ liệu
+
+- Ưu điểm: 
++ Tiện: hỗ trợ các câu lệnh, tích hợp tốt với các thư viện khác của python
++ Nhanh:
++ Dễ: học, gần giống tư duy chúng ta như: group, sort, join 
+...
+
+2. Series (loạt), DataFrame (khung dữ liệu)
+- Series giống như là 1 cột (trong excel)
+- DataFrame là 1 tập hợp các series
+
+3. Sử dụng pandas
+
+*  import pandas as pd
+
+<vd: tên biến là my_df>
+
+4. Cac thao tac doc co ban <ĐỌC FILE .CSV>
+- Đọc dữ liệu vào DataFrame
+	my_df= pd.read_csv("Tên file.csv")
+
+- Ghi dữ liệu vào file csv
+	my_df.to_csv("Ten file để lưu.csv")
+
+- Xem thông tin dataFrame
+	my_df.info()
+
+- Xem thông tin của 1 hay nhieu cột
+	my_df['ten cột ']
+	
+	nếu lấy nhiều cột thì truyền vào ds các cột
+	my_df[['ten cot 1','ten cot 2',...]]
+
+- Xem thong tin cua nhieu dong index, tail, head, iloc, loc  
+* lấy các bản ghi ở vị trí đầu tiên:
+	my_df.head(so luong dong)
+* lấy các bản ghi ở vị trí cuoi cung:
+	my_df.tail(so luong dong)
+* lay khoang giua:
+	my_df[1:5]
+
+- Lay theo dieu kien [ten truong file] <toan tu so sanh> <dieu kien so sanh> Vd: 
+	c1: my_df[my_df.<ten truong>=='M']
+	c2: my_df[my_df['Ten truong'] == 'M']
+	+ Mo rong them hop nhieu dieu kien
+	my_df[(my_df['ten truong 1']<toan tu so sanh> <dieu kien 1>) & (my_df['Ten truong 2']<toan tu so sanh> <dieu kien 2>)]
+
+5. Edit
+* Them cot:
+	my_df['ten cot them'] = bieu thuc nao do   VD: my_df[diem]>5
+	vd: my_df['doubleMark']= my_df['Mark']*2
+
+	+ Mo rong: them cot nhung kem dieu kien:
+	my_df['ten cot'] = np.where(my_df['ten cot de kien']<toan tu dieu kien><dieu kien la>, <gia tri tra ve neu TRUE>,<gtri tra ve neu Flase>)  // np: numpy
+
+* sua gia tri cua cot  
+	my_df['ten cot']= my_df['ten cot']+-*/... VD: my_df['doubleMark']= my_df['Mark']*2
+
+* xoa cot
+	my_df.drop(columns=['ten cot muon xoa']) ==> dữ liệu van nhu cu vi du lieu ch dc gan cho my_df
+	my_df= my_df.drop(columns=['ten cot muon xoa']) ==> đã xoa đc <check bằng cách gọi my_df>
+	my_df
+		- trong pandas ho tro neu muon xoa và mất luôn cột file đó thì dùng : 
+				my_df.drop(columns=['ten cot muon xoa'], inplace=True)
+* xoa hang
+	my_df = my_df.drop(index=[2,3,4]) -> xóa các hàng ở vị trí 2, 3 ,4
+
+* Thống kê:
+	my_df.sort_values(by=['ten cot']) -> sắp xếp giá trị tăng dần (mặc đinh)
+	my_df.sort_values(by=['ten cot'], ascending=Flase) -> sắp xếp giá trị giam dan
+	
+	my_df.describe() -> Thống kê chung của bảng dữ liệu 
+
+	** nối 2 DataFrame
+
+* Vẽ biểu đồ :
+
+- Biểu đồ line
+- biểu đồ bar
+- biểu đồ Pie
+
+vd: my_df['ten cot'].plot.line(linestyle='--', color='red',...)
+
+group_df = group_df.plot.pie(subplots= True, figsize=(20,20))     figsize:zoom to nho

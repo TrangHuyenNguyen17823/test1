@@ -1,0 +1,437 @@
+					*** COMMENT TRONG PYTHON
+
+# ghi chu tren 1 dong thi dung 1 dau #
+""" 
+Ghi chu tren nhieu dong dung 3 dau " " "
+"""
+--------------------------------------------------------------------------------
+# dau {} cua chuong trinh con trong py thay bang dau :   cac lenh ben trong 
+# thay bang thut le Tab 
+===============================================================================================
+					*** NHẬP DỮ LIỆU VÀO
+
+# Cac loai print
+print()
+
+print(5)
+
+print("Nguyen Tuan Dat")
+
+print(4); print("Nguyen Huyen Trang") # dau ; de ngan cac cac lenh tren cung 1 dong
+
+print("Xin", "Chao", "Cheng", 1234) # Cac chuoi ngan cach ngau bang dau cah _ (mac dinh), muon thay doi thi dung them 
+lenh sep=" ki hieu muon sd de ngan cach" trc dau ) đóng
+print("Xin", "Chao", "Cheng", 1234, sep=", ")
+
+# co the dung dau nhay don de xuat cuoi
+print('Nguyen Huyen Trang')
+
+# ket thuc 1 lenh mac dinh la khong gi ca, muon thay doi dung end, khi do lenh sau ngay sau end sex ko 
+print('Xin',' Chao', end=': ')
+print('Trang1')
+print('Trang2') # xuong 1 dong mới bắt đầu từ câu lệnh thứ 2
+
+# vua muon xuat thong bao, vua muon xuat cac gia tri nhu cout<<"Gia tri cua A la: "<<a 
+a= input("Nhap vao 1 so a = ")
+print('Gia tri cua a la: ' "a ={0}".format(a))
+b = input("Nhap vao 1 so b bat ki: ")
+print('Gia tri cua b la: '"b={0}".format(b))
+================================================================================================
+					*** BIẾN , HẰNG SỐ, TỪ KHÓA
+
+#### BIẾN
+x = 5 # khai báo vào khởi tạo biến x
+print(x)
+
+y=10 # khai báo và khởi tạo biến y
+y=15 # thay đổi giá trị của y
+print(y)
+
+# khai báo và khởi tạo giá trị khác nhau cho nhiều biến
+x,y,z = 1,2, "xin chao" 
+print(x)
+print(y)
+print(z)
+
+# khai báo và khởi tạo giá trị giống nhau cho nhiều biến
+x=y=z="Trang"
+print(x)
+print(y)
+print(z)
+
+# ----------------------------------------------------------------------------
+### HẰNG SỐ: trong python ko có cách khởi tạo hằng số mặc định, thay vào đó là ta thường
+viết hoa hằng số để người lập trình biết đó là khai báo hằng số và không thay đổi hằng số đó trong quá trình lập trình
+tuy nhiên trong python có một số modun có hằng số mặc định sẵn vd: import math   print(math.pi)
+### CÁCH ĐẶT TÊN BIẾN VÀ HẰNG SỐ
+- dùng các chữ cái từ a-z, A-Z , các con số 0-9 và dấu gạch dưới _ để đặt tên cho biến hoặc hằng số
+- Vd: content , full_name, _HoTen, PI, 
+- Không sử dụng từ KHÓA và tên biến hoặc hằng sỗ
+
+
+============================================================================================================
+					*** KIỂU DỮ LIỆU
+- int 		x = 1
+- float 	x = 1.0
+- complex	x = 1 + 2j
+- bool 		x =  True
+- str		x = 'abc'
+- NoneType	x = None
+
+- trong python khi khai báo 1 biến không cần phải viết kiểu dữ liệu đằng trc 
+=> ƯU ĐIỂM: 
+	+ viết code nhanh hơn
+	+ ít mã hơn
+==> NHƯỢC ĐIỂM:
+	+ thời gian chạy lâu hơn
+	+ khả năng xảy ra lỗi khó gỡ hơn
+- pyhton cho phép thay đổi kiểu dữ liệu của biến
+
+------------- Cách kiểm tra dữ liệu biến------------ Sử dụng câu lệnh: type(tên_biến) ----------------
+vd:
+x = 1.0
+y = True 
+z = 1
+a ="abc"
+b= 'ntfgb'
+c= None
+d= 5+8j ( có thể thay số 8 bằng các con số khác, không để là mối j)
+print(type(x), type(y), type(z), type(a), type(b), type(c), type (d))
+
+================================================================================================================
+				*** ÉP KIỂU ( CHUYỂN ĐỔI KIỂU DỮ LIỆU )
+- Python có 2 kiểu chuyển đổi kiểu
+
+1. chuyển đổi ngầm định: python tự động chuyển đổi 1 kiểu dữ liệu này sang kiểu dữ liệu khác. Quá trình này không cần bất kỳ
+sự tham gia nào của người dùng
+VD:
+a =5
+b = 2.0
+c = a/b
+print("Kiểu dữ liệu của a: ", type(a))
+print("Kiểu dữ liệu của b: ", type(b))
+print("Kiểu dữ liệu của c: ", type(c))
+
+Sau khi chạy ct, chúng ta có thể thấy c có kiểu dữ liệu float vì Python luôn chuyển đổi dữ liệu nhỏ hơn sang kiểu dữ 
+liệu lơn hơn để tránh mất dữ liệu
+
+2. Chuyển đổi kiểu rõ ràng
+
+- thử đoạn code sau xem có gặp lỗi hay không?
+n = 100
+m ="200"
+print(n+m)
+
+- chuyển đổi kiểu rõ ràng: do chúng ta thực hiện chuyển đổi kiểu dữ liệu của một đối tượng thành kiểu dữ liệu bắt buộc. 
+Chúng ta sử dụng các hàm có sẵn int(), float(), str(),vv để thực hiện chuyển đổi
+Cú pháp: ten_kieu_du_lieu(biến)
+VD:
+n = 100
+m = "200"
+// ép kiểu n sang kiểu chuỗi
+print(str(n)+m)         => kq: 100200
+// ép kiểu m sang số nguyên
+print(n+int(m))		=> kq: 300
+===================================================================================================================
+				*** CÁC PHÉP TOÁN SỐ HỌC CƠ BẢN
+- CỘNG: +
+- TRỪ: -
+- NHÂN: *
+- CHIA: /
+- CHIA LẤY PHẦN DƯ: %
+- CHIA LẤY PHẦN NGUYÊN: //
+- MŨ: **
+ 
+a= float(input("Nhap vao so a = "))
+b= float(input("Nhap vao so b = "))
+
+print("==============================")
+print("{0}+{1}={2}".format(a,b,a+b))
+print("{0}".format(a-b))
+print("{0}^{1}={2}".format(a,b,a**b))
+print("{0}//{1}={2}".format(a,b,a//b))
+
+
+				*** CÁC TOÁN TỬ SO SÁNH LÀ LOGIC ***
+- SO SÁNH
+	>
+	<
+	==
+	!=
+	>=
+	<=
+
+- LOGIC
+	and	x and y
+	or	x or y	
+	not	not x	false -> true, true -> flase
+-------------------------------------
+a= int(input("Nhap vao a: "))
+b= int(input("Nhap vao b: "))
+c= int(input("Nhap vao c: "))
+print((a>b) and (b>c))
+print((a<b) or (b>c))
+print(not(a>c))
+-------------------------------------
+Kết quả:
+Nhap vao a: 5
+Nhap vao b: 4 
+Nhap vao c: 2
+True 
+True 
+False
+
+				*** CÁC TOÁN TỬ GÁN
+
++=	-=	/=	*=	%=	//=	**=
+
+				
+	& 	a & b	AND
+	|	a|b	OR
+	^	a^b 	XOR
+	~ 	~a 	NOT
+	<< 	a<<n	dịch bít sang trái
+	>> 	a>>n 	dịch bít sang phải					
+
+
+				*** CÁC TOÁN TỬ ĐẶC BIỆT
+
+		is,	not is
+
+================================================================================================
+			*** THƯ VIỆN TOÁN HỌC MATH ***
+
+
+import math
+math.pi
+math.sqrt(x)
+math.fabs()
+math.abs()
+math.pow()
+math.log()
+math.cos()
+math.sin()...
+
+			*** TOÁN TỬ ĐIỀU KIỆN
+cú pháp:
+	[ trả về khi đk đúng ] if [điều kiện] else [trả về kết quả khi sai]
+
+a=5
+print("đúng") if(a==5) else print("sai")
+--------------------------------------------------------
+VD thực hành
+
+import math
+# nhap du lieu
+xa= int(input(""))
+ya= int(input(""))
+xb= int(input(""))
+yb= int(input(""))
+xc= int(input(""))
+yc= int(input(""))
+# kiem tra dieu kien thanh 1 tam giac
+# tinh do dai cac canh ab ac bc 
+ab = math.sqrt(math.pow((xa-xb),2)+math.pow((ya-yb),2))
+ac = math.sqrt(math.pow((xa-xc),2)+math.pow((ya-yc),2))
+bc = math.sqrt(math.pow((xb-xc),2)+math.pow((yb-yc),2))
+if(ab+ac>bc and ab+bc>ac and bc+ac>ab):
+    print("tao thanh 1 tam giac")
+    cv= ab+ac+bc
+    p = cv/2
+    dt= math.sqrt(p*(p-ac)*(p-ab)*(p-bc))
+    print("cv: ", cv)
+    print("dt: ", dt)
+else:
+    print("khong tao thanh 1 tam giac")
+
+=====================================================================================
+				*** KIỂU DỮ LIỆU LIST ***
+List: là một chuỗi các mục có thứ tự. Nó là một trong những kiểu dữ liệu được sử dụng nhiều
+nhất trong Python và rất linh hoạt. Tất cả các mục trong danh sách không cần cùng loại
+- Khai báo một danh sách khá đơn giản. Các mục được phân cách nhau bằng dấu , và được đặt trong dấu ngoặc []
+# tạo list rỗng
+emptyList=[]
+
+# tạo ra một đối tượng list
+emptyList2 = list()
+
+print(emptyList)
+print(emptyList2)
+
+# tạo ra list có dữ liệu
+colors = ["red", "green", "orange"]
+print(colors)
+
+# list có thứ tự, vị trí các phần tử được đánh dấu từ 0, từ trái sang phải
+studentList=["An", "Binh", "Lan", "Trang", 1, 206]
+print(studentList[2])
+print(studentList[0])
+
+# xuất danh sách tring List
+print(studentList)
+print(studentList[:])
+
+# lấy ra 1 số phần tử trong mảng
+# studentList[x:y] => lấy ra các phần tử từ [x:y)
+print(studentList[1:3])  # lấy ra phần tử thứ 1 và 2
+
+# thêm phần tử vào cuối List
+studentList.append("Thiện")
+print(studentList)
+# hoặc
+studentList[len(studentList):]=["Thành"]
+print(studentList)
+
+# chèn phần tử vào Lits
+# chèn phần tử là Ngọc vào vị trí số 2, các phần tử khác bị dịch xuống
+studentList.insert(2, "Ngọc")
+print(studentList)
+
+# độ dài, số lượng phần tử trong List: => len(<tên List>)
+print(len(studentList))
+
+# đếm số phần tửu thỏa mãn điều kiện
+print("Đếm Trang: ", studentList.count("Trang"))
+print("Đếm An: ", studentList.count("An"))
+
+# xóa các phần tử ra khỏi List bằng giá trị
+studentList.remove("Trang")
+print(studentList)
+
+# kiểm tra phần tử có bên trong List: in
+if "Trang" in studentList:
+    studentList.remove("Trang")
+    print(studentList)
+    
+# xóa phần tử ra khỏi List bằng vị trí
+studentList.pop(0)
+print(studentList)
+
+# đảo ngược List : reverse()
+studentList.reverse()
+print(studentList)
+
+# sắp xếp List từ nhỏ đến lớp : sort()
+studentList.sort()
+print(studentList)
+
+# sắp xếp List từ lớp đến nhỏ : ghép các hàm reverse và sort 
+studentList.sort(reverse= True)
+print(studentList)
+
+# xóa sạch dữ liệu trong List
+studentList.clear()
+print(studentList)
+
+
+s="TRANG"
+print(s[-2])  ->kq: N
+    T    R   A   N   G 
+S   0    1   2   3   4
+S   -5  -4  -3  -2  -1
+=======================================================================================================
+					### VÒNG LẶP FOR 
+for i in range(10):
+    print(i)
+
+n =20; s=0
+for i in range(n):
+    s+=i 
+print("s = ", s)
+
+colors=["red", "yellow", "green", "gray", "violet"]
+for i in range(len(colors)):
+    print(colors[i])
+
+print("")
+for i in colors:
+    print(i)
+    
+    
+for i in range(0, 10, 2):
+    print(i)
+    
+print("")
+for i in range(10, 0, -1):
+    print(i)
+
+
+					*** VÒNG LẶP LỒNG NHAU
+
+## in bảng cửu chương
+
+for i in range(11):
+    for j in range(10):
+        print("{0} x {1} = {2}". format(j, i, i*j))
+    print("")
+
+
+==================================================================================================
+				### KIỂU DỮ LIỆU STRING
+
+#Cộng chuỗi
+s1 = "Xin chào"
+s2 = "Trang"
+s3 = s1+" "+s2
+print(s3)
+
+# chuỗi nhiều dong đặt trong cặp dấu ''' <content> '''
+chuoi_nhieu_dong= '''
+Nguyen Thi Huyen Trang 
+Đai học Công Nghiệp Hà Nội
+Ngành CNTT'''
+print(chuoi_nhieu_dong)
+
+# python cho phép repeat nhiều chuỗi bằng dấu *
+vd = "lap lai chuoi nay\n"
+print(vd*10)
+
+# kiem tra chuoi cha co chứa chuoi con hay khong
+chuoi1= "Nguyen Thi Huyen Trang"
+chuoi2= "Huyen"
+if chuoi2 in chuoi1:
+    print("chuoi 2 có trong chuoi 1")
+else:
+    print("chuoi 2 khong nam trong chuoi 1")
+    
+# viết hoa chữ đầu của chuỗi
+s= "today is monday"
+s= str.capitalize(s)
+print(s)
+
+# viết hoa toàn bộ
+s=str.upper(s)
+print(s)
+
+# viết thường toàn bộ
+s= str.lower(s)
+print(s)
+
+# tìm và đếm số lượng chuỗi con
+s= "mo mon mond monda monday monday monday"
+print(s.find("monday"))  # kq = 18, trả về -1 nếu ko tìm thấy, ngược lại trả về vị trí đầu tiên tìm thấy trong chuỗi cha
+print(s.count("monday")) # số lượng chuỗi tương ứng tìm đc
+
+# Thay thế
+s= s.replace("monday", "Tuesday")
+print(s)
+
+# cắt một chuỗi thành 1 list
+list1= s.split("m")
+list2= s.split(" ")
+print(list1)
+print(list2)
+
+# lấy ra chuỗi con 
+print(s[0:10])
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+fragment -> activity
+board cast: 
+service : hoạt động dưới nền
+Jcontent provide : 
+permission : quyền truy cập + androidmainFest
+			  
+
+storage: 
+1. local 
+2. remote

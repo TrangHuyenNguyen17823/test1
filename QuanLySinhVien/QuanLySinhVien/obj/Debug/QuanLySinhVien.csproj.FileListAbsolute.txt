@@ -1,0 +1,8 @@
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\Lucius\OneDrive\Máy tính\Đại học CNTT01\Lập trình .NET\buoi2\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb

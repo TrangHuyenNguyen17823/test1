@@ -1,0 +1,15 @@
+1. Tầng nào trong mô hình  TCP/IP hiệu chỉnh (điều kiển) dòng dữ liệu và hiểu chỉnh  lỗi (flow control, and eror corection)? - Transport       
+
+2. Một hệ thống mạng của một cơ quan gồm có 150 máy tính nằm trong một tòa nhà trong đó có 3 máy chủ. Tất cả các máy tính đều có thể truy cập lẫn nhau và lấy được tài nguyên trên mạng. Hệ thống trên có tên gọi là? - LAN
+
+3. Tầng nào trong mô hình OSI cung cấp kết nối và chọn đường đi giữa hai hệ thống cuối mà ở đó có xảy ra sự định tuyến(routing) - Network layer
+
+4. Lớp địa chỉ IP nào cung cấp số lượng Hots ít nhất - C : 24/16/8
+
+5. Topology mạng được mô tả như thế nào? - Kiến trúc hệ thống mạng
+
+6. Chức năng chính của Switch ? - Lọc tín hiệu nhiễu, khuếch đại tín hiệu và gửi chuyển tiếp tới tất cả các cổng còn lại của Switch 
+
+7. Thứ tự các tầng OSI: DataLink- Transport - Sesion - Presentation 
+
+8. Phương pháp CSMA/CD còn gọi là: Listen while talk (LWT) 
